@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Maven\LocalRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sWlw0AzjATwmf4BGyzawYcfdzW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="simple-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.simpleservice.SimpleServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="" />
+      <created>1620996461368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620996461368</updated>
+      <workItem from="1620996468494" duration="3905000" />
+      <workItem from="1621003489767" duration="3116000" />
+      <workItem from="1621067641420" duration="9277000" />
+      <workItem from="1621077225518" duration="373000" />
+      <workItem from="1621077696616" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="460" y="113" key="FileChooserDialogImpl" timestamp="1620997028878">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="460" y="113" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1620997028878" />
+    <state x="495" y="285" key="Github.CreateGistDialog" timestamp="1621076631828">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="495" y="285" key="Github.CreateGistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621076631828" />
+    <state x="491" y="145" width="409" height="196" key="Github.ShareDialog" timestamp="1621077513679">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="491" y="145" width="409" height="196" key="Github.ShareDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077513679" />
+    <state x="388" y="57" key="Github.UntrackedFilesDialog" timestamp="1621076898001">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621076898001" />
+    <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1620997032255">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="320" y="73" key="NewModule_or_Project.wizard/0.0.1360.728@0.0.1360.728" timestamp="1620997032255" />
+    <state x="183" y="10" key="SettingsEditor" timestamp="1621077732497">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="183" y="10" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1621077732497" />
+    <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1621077106823">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077106823" />
+  </component>
+</project>
