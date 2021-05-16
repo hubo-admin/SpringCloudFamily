@@ -1,13 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="" />
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="Spring Cloud Config By git">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/docker/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/java/com/thoughtmechanix/confsvr/ConfigServerApplicationByLocalfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice-aws-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/licensingservice/licensingservice-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/licensingservice/licensingservice-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/licensingservice/licensingservice.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice-aws-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice-aws-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter2-git.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter2-localfile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/config/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/License.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/repository/LicenseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/OrganizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="v1.0-" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -29,26 +87,86 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/configuration-service-localfile/src/main" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.14941406" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\resources" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-git\src\main\resources" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-git\src\main" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <component name="RunManager" selected="Spring Boot.LicenseServiceApplication">
+    <configuration name="ConfigServerApplicationByGit" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="configuration-service-git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtmechanix.confsvr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.confsvr.ConfigServerApplicationByGit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplicationByLocalfile" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="configuration-service-localfile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtmechanix.confsvr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.confsvr.ConfigServerApplicationByLocalfile" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LicenseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="licensing-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtmechanix.licenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.licenses.LicenseServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="simple-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.simpleservice.SimpleServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LicenseServiceApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
+        <item itemvalue="Spring Boot.ConfigServerApplicationByGit" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -64,19 +182,49 @@
       <workItem from="1621003489767" duration="3116000" />
       <workItem from="1621067641420" duration="9277000" />
       <workItem from="1621077225518" duration="373000" />
-      <workItem from="1621077696616" duration="32000" />
+      <workItem from="1621077696616" duration="23115000" />
+      <workItem from="1621131605906" duration="6011000" />
     </task>
+    <task id="LOCAL-00001" summary="Spring Cloud Config By git">
+      <created>1621138240134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138240138</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Spring Cloud Config By git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Config By git" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="160" y="0" key="#Project_Structure" timestamp="1621083698856">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="160" y="0" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1621083698856" />
+    <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621090350570">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1621090350570" />
     <state x="460" y="113" key="FileChooserDialogImpl" timestamp="1620997028878">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -85,14 +233,46 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="495" y="285" key="Github.CreateGistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621076631828" />
-    <state x="491" y="145" width="409" height="196" key="Github.ShareDialog" timestamp="1621077513679">
+    <state x="491" y="145" width="409" height="196" key="Github.ShareDialog" timestamp="1621077773717">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="491" y="145" width="409" height="196" key="Github.ShareDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077513679" />
-    <state x="388" y="57" key="Github.UntrackedFilesDialog" timestamp="1621076898001">
+    <state x="491" y="145" width="409" height="196" key="Github.ShareDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077773717" />
+    <state x="388" y="57" key="Github.UntrackedFilesDialog" timestamp="1621077854413">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621076898001" />
+    <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
+    <state width="1316" height="393" key="GridCell.Tab.0.bottom" timestamp="1621106535621">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621106535621" />
+    <state width="1316" height="393" key="GridCell.Tab.0.center" timestamp="1621106535620">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621106535620" />
+    <state width="1316" height="393" key="GridCell.Tab.0.left" timestamp="1621106535620">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621106535620" />
+    <state width="1316" height="393" key="GridCell.Tab.0.right" timestamp="1621106535621">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621106535621" />
+    <state width="1316" height="393" key="GridCell.Tab.1.bottom" timestamp="1621106535622">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621106535622" />
+    <state width="1316" height="393" key="GridCell.Tab.1.center" timestamp="1621106535622">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621106535622" />
+    <state width="1316" height="393" key="GridCell.Tab.1.left" timestamp="1621106535621">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621106535621" />
+    <state width="1316" height="393" key="GridCell.Tab.1.right" timestamp="1621106535622">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="393" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621106535622" />
     <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1620997032255">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -101,9 +281,17 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="183" y="10" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1621077732497" />
-    <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1621077106823">
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621080965489">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077106823" />
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621080965489" />
+    <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1621134831271">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1621134831271" />
+    <state x="109" y="45" key="new project wizard" timestamp="1621097006474">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="109" y="45" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1621097006474" />
   </component>
 </project>

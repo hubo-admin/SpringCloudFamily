@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="configuration-service-localfile" />
+        <module name="licensing-service" />
+        <module name="configuration-service-git" />
         <module name="simple-service" />
       </profile>
     </annotationProcessing>
