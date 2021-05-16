@@ -59,14 +59,14 @@
           因为需要从共有镜像库拉取相关镜像，最好配置一个国内镜像地址，提高下载速度。 
           > Linux中，在/etc/docker/daemon.json配置
 
-### 编译项目
+### 编译项目（以 v1.0-simple-service 为例）
 - 编译整个项目需要在根目录下执行：
     ```shell script
     mvn clean package docker:build
     ```
     > 如果只想编译单个服务的镜像，需要到指定model的根目录执行
 
-### 启动服务
+### 启动服务（以 v1.0-simple-service 为例）
 > 所有指令都要在docker环境中执行
 
 - 通过docker run 启动simple-service
@@ -94,7 +94,7 @@
         # docker logs {容器标识}
         ```
 
-### For the branch of v2.0-spring-cloud-config
+## For the branch of v2.0-spring-cloud-config
 #### 新曾模块说明
 - config server 服务端
     - configuration-service-git  

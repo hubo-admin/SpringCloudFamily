@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +155,7 @@
       <workItem from="1621067641420" duration="9277000" />
       <workItem from="1621077225518" duration="373000" />
       <workItem from="1621077696616" duration="23115000" />
-      <workItem from="1621131605906" duration="10002000" />
+      <workItem from="1621131605906" duration="10335000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -209,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621141604750</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1621142478682</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621142478682</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1621142507653</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1621142507653</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,10 +313,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="183" y="10" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1621077732497" />
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621080965489">
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621142553171">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621080965489" />
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621142553171" />
     <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1621134831271">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
