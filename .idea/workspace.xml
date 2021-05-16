@@ -1,52 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="Spring Cloud Config By git">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/java/com/thoughtmechanix/confsvr/ConfigServerApplicationByLocalfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice-aws-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/authenticationservice/authenticationservice.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/licensingservice/licensingservice-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/licensingservice/licensingservice-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/licensingservice/licensingservice.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice-aws-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/organizationservice/organizationservice.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice-aws-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/zuulservice/zuulservice.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter2-git.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter2-localfile.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/config/ServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/License.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/repository/LicenseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/z_other_jar/jce_policy-8/UnlimitedJCEPolicyJDK8/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z_other_jar/jce_policy-8/UnlimitedJCEPolicyJDK8/US_export_policy.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z_other_jar/jce_policy-8/UnlimitedJCEPolicyJDK8/local_policy.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/configuration-service-localfile/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/z_other_jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -106,11 +84,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\z_other_jar" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\resources" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-git\src\main\resources" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-git\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.LicenseServiceApplication">
@@ -183,7 +161,7 @@
       <workItem from="1621067641420" duration="9277000" />
       <workItem from="1621077225518" duration="373000" />
       <workItem from="1621077696616" duration="23115000" />
-      <workItem from="1621131605906" duration="6011000" />
+      <workItem from="1621131605906" duration="9333000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -192,7 +170,42 @@
       <option name="project" value="LOCAL" />
       <updated>1621138240138</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Spring Cloud Config By localfile">
+      <created>1621138277679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138277679</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spring Cloud Config Client Project Initial Demo --- licensing-service">
+      <created>1621138382320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138382320</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docker-compose .xml file for chapter2">
+      <created>1621138495781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138495785</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1621138525920</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138525920</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <created>1621138542086</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138542086</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +227,11 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Spring Cloud Config By git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Config By git" />
+    <MESSAGE value="Spring Cloud Config By localfile" />
+    <MESSAGE value="Spring Cloud Config Client Project Initial Demo --- licensing-service" />
+    <MESSAGE value="docker-compose .xml file for chapter2" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="160" y="0" key="#Project_Structure" timestamp="1621083698856">
@@ -241,38 +258,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="393" key="GridCell.Tab.0.bottom" timestamp="1621106535621">
+    <state width="1316" height="160" key="GridCell.Tab.0.bottom" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621106535621" />
-    <state width="1316" height="393" key="GridCell.Tab.0.center" timestamp="1621106535620">
+    <state width="1316" height="160" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
+    <state width="1316" height="160" key="GridCell.Tab.0.center" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621106535620" />
-    <state width="1316" height="393" key="GridCell.Tab.0.left" timestamp="1621106535620">
+    <state width="1316" height="160" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
+    <state width="1316" height="160" key="GridCell.Tab.0.left" timestamp="1621141256102">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621106535620" />
-    <state width="1316" height="393" key="GridCell.Tab.0.right" timestamp="1621106535621">
+    <state width="1316" height="160" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621141256102" />
+    <state width="1316" height="160" key="GridCell.Tab.0.right" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621106535621" />
-    <state width="1316" height="393" key="GridCell.Tab.1.bottom" timestamp="1621106535622">
+    <state width="1316" height="160" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
+    <state width="1316" height="160" key="GridCell.Tab.1.bottom" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621106535622" />
-    <state width="1316" height="393" key="GridCell.Tab.1.center" timestamp="1621106535622">
+    <state width="1316" height="160" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
+    <state width="1316" height="160" key="GridCell.Tab.1.center" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621106535622" />
-    <state width="1316" height="393" key="GridCell.Tab.1.left" timestamp="1621106535621">
+    <state width="1316" height="160" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
+    <state width="1316" height="160" key="GridCell.Tab.1.left" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621106535621" />
-    <state width="1316" height="393" key="GridCell.Tab.1.right" timestamp="1621106535622">
+    <state width="1316" height="160" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
+    <state width="1316" height="160" key="GridCell.Tab.1.right" timestamp="1621141256103">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="393" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621106535622" />
+    <state width="1316" height="160" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621141256103" />
     <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1620997032255">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

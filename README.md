@@ -93,3 +93,58 @@
         # 产看单个服务的启动日志
         # docker logs {容器标识}
         ```
+
+### For the branch of v2.0-spring-cloud-config
+#### 新曾模块说明
+- config server 服务端
+    - configuration-service-git  
+      以Git仓库作为存储配置文件的配置中心服务
+    - configuration-service-localfile  
+      以本地文件系统作为存储配置文件的配置中心服务
+- config client 客户端
+    - licensing-servic  
+      一个证书管理服务，将配置文件交给 config server 管理
+
+#### 注意事项
+- 项目以docker容器编排启动
+    1. 通过maven编译docker镜像  
+       项目根目录下执行：
+       ```shell script
+       mvn clean package docker:build
+       ```
+    2. 在容器宿主机上传根目录下单docker文件夹，然后执行命令：
+       ```shell script
+       docker-compose -f docker/common/docker-compose-chapter2-localfile.yml up -d
+       ```
+       或者：
+       ```shell script
+       docker-compose -f docker/common/docker-compose-chapter2-git.yml up -d
+       ```
+- 在本地idea启动：
+1. 下载并安装加密所需要的Oracle JCE jar  
+    > jce_policy-8:项目根目录下z_other_jar中提供了相关的jar
+    
+    将z_other_jar\jce_policy-8\UnlimitedJCEPolicyJDK8中的jar包拷贝到自己%JAVA_HOME%/jre/lib/security下
+2. 添加密钥环境变量：
+    ENCRYPT_KEY=IMSYMMENTRIC
+2. 需要修改配置文件中的数据库连接  
+   - 直接修改 config server 服务中licensing-service的配置文件： 
+     文件路径：src\main\resources\config\licensingservice\licensingservice.yml：
+     修改内容：
+       ```text
+       spring.datasource.url: "jdbc:postgresql://database:5432/eagle_eye_local" 
+       spring.datasource.username: "postgres"
+       spring.datasource.password: "{cipher}e3c0ee309724744fd660f83c851bee545558749369d68d30ea91ce9aee5ccc07"
+       改为
+       spring.datasource.url: "jdbc:postgresql://{自己的postgresql数据库地址}:{端口}/{数据库名称}"
+       spring.datasource.username: "{数据库用户名}"
+       spring.datasource.password: "{cipher}加密后的密码"
+       ```
+   - 为系统添加域名主机名映射  
+     添加 database 主机名 到 数据库实际地址的映射：  
+     例如：在C:\Windows\System32\drivers\etc\host中添加
+     ```text
+      127.0.0.1 database
+     ```
+     > 前面时数据库的实际地址，后面时映射的主机名。这样一来，licensing-service从config server读取的配置文件中jdbc:postgresql://database:5432/eagle_eye_local就可以直接映射到指定的数据库服务
+   
