@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    config:
+      server:
+        encrypt.enabled: false
+        git:
+          # 仓库地址
+          uri: https://github.com/hubo-admin/config-repo.git
+          # Git 的分支(默认：master)
+          # default-label: main
+          # 仓库文件夹名称，多个以逗号分隔
+          searchPaths: licensingservice
+          # git 仓库用户名（公开库可以不用填写）
+          # username:
+          # git 仓库密码（公开库可以不用填写）
+          # password:
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        encrypt.enabled: false
+#        git:
+#          uri: https://github.com/carnellj/config-repo/
+#          searchPaths: licensingservice,organizationservice
+#          username: native-cloud-apps
+#          password: 0ffended
