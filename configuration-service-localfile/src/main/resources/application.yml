@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+     config:
+       server:
+         encrypt:
+           enabled: false # 服务端不解密
+         native:
+            #searchLocations: file:///E:/Projects/MicroServices/SpringMicroservicesInAction/configuration-service-file-sys/src/main/resources/config/licensingservice,
+            searchLocations: classpath:config/
+             ,classpath:config/licensingservice
+              ,classpath:config/organizationservice
+               ,classpath:config/zuulservice
+                ,classpath:config/specialroutesservice
+                 ,authenticationservice
