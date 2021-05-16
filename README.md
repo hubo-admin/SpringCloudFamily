@@ -112,6 +112,16 @@
        ```shell script
        mvn clean package docker:build
        ```
+       我之前编译上一个版本simple-service时正常，但是这次编译时出现了一些错误：  
+       1. 连接不到远程docker
+          ![连接超时](z-readme-imgs/build-bug-1.png)  
+          原因：之前docker宿主机重启了，防火墙没有关闭
+          解决：关闭防火墙或者开放tcp/2375端口
+       2. 镜像构建时无法下载相关文件
+          ![连接超时](z-readme-imgs/build-bug-2.png)  
+          原因：可能时由于之前docker宿主机强制关机，百度有人说是镜像源处理问题
+          解决：我重启docker之后就好了
+          
     2. 在容器宿主机上传根目录下单docker文件夹，然后执行命令：
        ```shell script
        docker-compose -f docker/common/docker-compose-chapter2-localfile.yml up -d
