@@ -158,3 +158,33 @@
      ```
      > 前面时数据库的实际地址，后面时映射的主机名。这样一来，licensing-service从config server读取的配置文件中jdbc:postgresql://database:5432/eagle_eye_local就可以直接映射到指定的数据库服务
    
+## For the branch of v3.0-spring-cloud-eureka
+#### 新曾模块说明
+- eureka server 服务端
+    - eurekasvr  
+      注册中心服务端，客户端向服务端注册
+      
+- eureka client 客户端
+    - organization-service  
+      新增的服务：一个管理组织结构的服务。
+      - 使用配置中心获取配置文件
+      - 向注册中心注册服务
+    - licensing-servic  
+      修改证书服务：
+      - 向注册中心注册服务
+      - 添加三种方式远程调用organization-service
+
+#### 注意事项
+- 项目启动方式：类似上一节  
+  容器编排文件：  
+  docker\common\docker-compose-chapter3-localfile.yml
+
+- licensing-service服务新增的三个访问方式在：  
+  licensing-service\src\main\java\com\thoughtmechanix\licenses\clients
+  
+  测试端点：
+  - v1/tools/eureka/services  
+    获取注册中心已注册的服务  
+  - v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}  
+    获取证书信息及远程调用获取组织机构详细信息
+    - clientType：feign,rest,discovery
