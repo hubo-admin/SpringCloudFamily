@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="docker容器执行脚本接容器构建脚本修改  通过">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update" />
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +323,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621258750793</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update">
+      <created>1621260254729</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1621260254729</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update">
+      <created>1621261208317</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1621261208317</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,11 +372,11 @@
     <MESSAGE value="initial eurekasvr model" />
     <MESSAGE value="修改配置服务中组织服务相关的配置文件，把数据库连接地址改为远端数据库docker容器服务的地址" />
     <MESSAGE value="创建一个组织机构管理服务organization-service，并向注册中心eurekasvr注册" />
-    <MESSAGE value="update" />
     <MESSAGE value="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式" />
     <MESSAGE value="fix 启动类错误修正" />
     <MESSAGE value="docker容器执行脚本接容器构建脚本修改  通过" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker容器执行脚本接容器构建脚本修改  通过" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="231" key="#Notifications" timestamp="1621250596758">
@@ -451,10 +463,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621253473345">
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621260284375">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621253473345" />
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621260284375" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
