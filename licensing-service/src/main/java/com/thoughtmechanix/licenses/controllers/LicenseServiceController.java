@@ -48,6 +48,21 @@ public class LicenseServiceController {
     }
 
     /**
+     * 获取指定机构的某一个证书，并指定远程获取组织机构信息的方式，返回证书及机构信息
+     * @param organizationId
+     * @param licenseId
+     * @param clientType
+     * @return
+     */
+    @RequestMapping(value="/{licenseId}/{clientType}",method = RequestMethod.GET)
+    public License getLicenseWithClient( @PathVariable("organizationId") String organizationId,
+                                          @PathVariable("licenseId") String licenseId,
+                                          @PathVariable("clientType") String clientType) {
+
+        return licenseService.getLicense(organizationId,licenseId, clientType);
+    }
+
+    /**
      * 上传一个保存一个证书
      * @param license
      */

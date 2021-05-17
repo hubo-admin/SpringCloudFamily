@@ -51,6 +51,18 @@
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
+        <!--   Eureka依赖，用来与Eureka服务进行交互的jar     -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
+        <!--   Feign依赖，用来做远程调用     -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
