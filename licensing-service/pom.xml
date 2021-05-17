@@ -79,7 +79,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>com.thoughtmechanix.licenses.LicenseServiceApplication</start-class>
         <docker.image.name>adminhubo/cloud-licensing-service</docker.image.name>
-        <docker.image.tag>chapter2</docker.image.tag>
+        <docker.image.tag>chapter3</docker.image.tag>
     </properties>
 
     <build>

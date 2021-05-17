@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update" />
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="v1.0-" />
+        <entry key="$PROJECT_DIR$" value="v2.0-spring-cloud-config" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/z_other_jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/organization-service/src/main" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,14 +87,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\resources" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\java" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\eurekasvr\src\main\resources" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\z_other_jar" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\resources" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-git\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.LicenseServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrganizationApplication">
     <configuration name="ConfigServerApplicationByGit" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="configuration-service-git" />
       <extension name="coverage">
@@ -112,6 +121,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eurekasvr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtmechanix.eurekasvr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.eurekasvr.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LicenseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="licensing-service" />
       <extension name="coverage">
@@ -125,6 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrganizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="organization-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.organization.OrganizationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="simple-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.simpleservice.SimpleServiceApplication" />
@@ -134,9 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.LicenseServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
+        <item itemvalue="Spring Boot.LicenseServiceApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplicationByGit" />
+        <item itemvalue="Spring Boot.LicenseServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +177,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="" />
+      <changelist id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
       <created>1620996461368</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -155,7 +187,9 @@
       <workItem from="1621067641420" duration="9277000" />
       <workItem from="1621077225518" duration="373000" />
       <workItem from="1621077696616" duration="23115000" />
-      <workItem from="1621131605906" duration="10335000" />
+      <workItem from="1621131605906" duration="13212000" />
+      <workItem from="1621214533493" duration="482000" />
+      <workItem from="1621216214645" duration="12009000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -220,7 +254,49 @@
       <option name="project" value="LOCAL" />
       <updated>1621142507653</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1621142740776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621142740776</updated>
+    </task>
+    <task id="LOCAL-00011" summary="initial eurekasvr model">
+      <created>1621218720759</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621218720759</updated>
+    </task>
+    <task id="LOCAL-00012" summary="initial eurekasvr model">
+      <created>1621222238310</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1621222238310</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修改配置服务中组织服务相关的配置文件，把数据库连接地址改为远端数据库docker容器服务的地址">
+      <created>1621235345584</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621235345584</updated>
+    </task>
+    <task id="LOCAL-00014" summary="创建一个组织机构管理服务organization-service，并向注册中心eurekasvr注册">
+      <created>1621237752401</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621237752401</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update">
+      <created>1621237837553</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1621237837553</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +312,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -245,18 +322,25 @@
     <MESSAGE value="Spring Cloud Config By localfile" />
     <MESSAGE value="Spring Cloud Config Client Project Initial Demo --- licensing-service" />
     <MESSAGE value="docker-compose .xml file for chapter2" />
+    <MESSAGE value="initial eurekasvr model" />
+    <MESSAGE value="修改配置服务中组织服务相关的配置文件，把数据库连接地址改为远端数据库docker容器服务的地址" />
+    <MESSAGE value="创建一个组织机构管理服务organization-service，并向注册中心eurekasvr注册" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="160" y="0" key="#Project_Structure" timestamp="1621083698856">
+    <state x="160" y="0" key="#Project_Structure" timestamp="1621233785199">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="160" y="0" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1621083698856" />
+    <state x="160" y="0" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1621233785199" />
     <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621090350570">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1621090350570" />
+    <state x="128" y="54" key="DiffContextDialog" timestamp="1621143314961">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="128" y="54" key="DiffContextDialog/0.0.1360.728@0.0.1360.728" timestamp="1621143314961" />
     <state x="460" y="113" key="FileChooserDialogImpl" timestamp="1620997028878">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -273,38 +357,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="139" key="GridCell.Tab.0.bottom" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.0.bottom" timestamp="1621237430506">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.0.center" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621237430506" />
+    <state width="1316" height="279" key="GridCell.Tab.0.center" timestamp="1621237430505">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.0.left" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621237430505" />
+    <state width="1316" height="279" key="GridCell.Tab.0.left" timestamp="1621237430505">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.0.right" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621237430505" />
+    <state width="1316" height="279" key="GridCell.Tab.0.right" timestamp="1621237430505">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.1.bottom" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621237430505" />
+    <state width="1316" height="279" key="GridCell.Tab.1.bottom" timestamp="1621237430506">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.1.center" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621237430506" />
+    <state width="1316" height="279" key="GridCell.Tab.1.center" timestamp="1621237430506">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.1.left" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621237430506" />
+    <state width="1316" height="279" key="GridCell.Tab.1.left" timestamp="1621237430506">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
-    <state width="1316" height="139" key="GridCell.Tab.1.right" timestamp="1621141741730">
+    <state width="1316" height="279" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621237430506" />
+    <state width="1316" height="279" key="GridCell.Tab.1.right" timestamp="1621237430506">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="139" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621141741730" />
+    <state width="1316" height="279" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621237430506" />
     <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1620997032255">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -313,17 +397,33 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="183" y="10" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1621077732497" />
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621142553171">
+    <state x="526" y="282" key="VCS.ChangelistChooser" timestamp="1621222205630">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621142553171" />
+    <state x="526" y="282" key="VCS.ChangelistChooser/0.0.1360.728@0.0.1360.728" timestamp="1621222205630" />
+    <state x="510" y="235" key="VCS.EditChangelistDialog" timestamp="1621222164651">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621142959623">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621142959623" />
     <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1621134831271">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1621134831271" />
-    <state x="109" y="45" key="new project wizard" timestamp="1621097006474">
+    <state x="434" y="78" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621143317870">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="109" y="45" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1621097006474" />
+    <state x="434" y="78" key="git4idea.branch.GitSmartOperationDialog/0.0.1360.728@0.0.1360.728" timestamp="1621143317870" />
+    <state x="16" y="42" key="new project wizard" timestamp="1621232779267">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="16" y="42" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1621232779267" />
+    <state x="336" y="162" key="run.anything.popup" timestamp="1621235086946">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1621235086946" />
   </component>
 </project>

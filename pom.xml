@@ -25,6 +25,7 @@
         <module>configuration-service-git</module>
         <module>configuration-service-localfile</module>
         <module>eurekasvr</module>
+        <module>organization-service</module>
     </modules>
 
     <build>
