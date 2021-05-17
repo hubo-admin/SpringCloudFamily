@@ -1,0 +1,9 @@
+#Default port is 8761
+eureka:
+  client:
+    registerWithEureka: false #不使用eureka服务进行注册
+    fetchRegistry: false #不在本地缓存注册表
+  server:
+    waitTimeInMsWhenSyncEmpty: 5 #在服务器收到请求之前等待的时间
+  serviceUrl:
+    defaultZone: http://localhost:8761

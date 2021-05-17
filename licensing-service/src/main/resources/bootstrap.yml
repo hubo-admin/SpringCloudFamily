@@ -8,4 +8,4 @@ spring:
       default
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://confsvr:8888
