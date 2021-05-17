@@ -24,6 +24,7 @@
         <module>licensing-service</module>
         <module>configuration-service-git</module>
         <module>configuration-service-localfile</module>
+        <module>eurekasvr</module>
     </modules>
 
     <build>
