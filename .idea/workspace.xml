@@ -19,21 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationDiscoveryClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/ToolsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/DiscoveryService.java" afterDir="false" />
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式">
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter3-localfile.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekasvr/src/main/java/com/thoughtmechanix/eurekasvr/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eurekasvr/src/main/java/com/thoughtmechanix/eurekasvr/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/model/License.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/OrganizationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/OrganizationApplication.java" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +74,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/common" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -94,11 +82,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\java\com\thoughtmechanix\licenses\clients" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\resources" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\java" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\eurekasvr\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.OrganizationApplication">
@@ -196,7 +184,7 @@
       <workItem from="1621077696616" duration="23115000" />
       <workItem from="1621131605906" duration="13212000" />
       <workItem from="1621214533493" duration="482000" />
-      <workItem from="1621216214645" duration="15819000" />
+      <workItem from="1621216214645" duration="16758000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -317,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621237915991</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式">
+      <created>1621242446426</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621242446426</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +342,8 @@
     <MESSAGE value="修改配置服务中组织服务相关的配置文件，把数据库连接地址改为远端数据库docker容器服务的地址" />
     <MESSAGE value="创建一个组织机构管理服务organization-service，并向注册中心eurekasvr注册" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="160" y="0" key="#Project_Structure" timestamp="1621233785199">
@@ -378,38 +374,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="163" key="GridCell.Tab.0.bottom" timestamp="1621241644889">
+    <state width="1316" height="163" key="GridCell.Tab.0.bottom" timestamp="1621242091281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621241644889" />
-    <state width="1316" height="163" key="GridCell.Tab.0.center" timestamp="1621241644889">
+    <state width="1316" height="163" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621242091281" />
+    <state width="1316" height="163" key="GridCell.Tab.0.center" timestamp="1621242091281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621241644889" />
-    <state width="1316" height="163" key="GridCell.Tab.0.left" timestamp="1621241644888">
+    <state width="1316" height="163" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621242091281" />
+    <state width="1316" height="163" key="GridCell.Tab.0.left" timestamp="1621242091281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621241644888" />
-    <state width="1316" height="163" key="GridCell.Tab.0.right" timestamp="1621241644889">
+    <state width="1316" height="163" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621242091281" />
+    <state width="1316" height="163" key="GridCell.Tab.0.right" timestamp="1621242091281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621241644889" />
-    <state width="1316" height="163" key="GridCell.Tab.1.bottom" timestamp="1621241644891">
+    <state width="1316" height="163" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621242091281" />
+    <state width="1316" height="163" key="GridCell.Tab.1.bottom" timestamp="1621242091282">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621241644891" />
-    <state width="1316" height="163" key="GridCell.Tab.1.center" timestamp="1621241644890">
+    <state width="1316" height="163" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621242091282" />
+    <state width="1316" height="163" key="GridCell.Tab.1.center" timestamp="1621242091282">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621241644890" />
-    <state width="1316" height="163" key="GridCell.Tab.1.left" timestamp="1621241644890">
+    <state width="1316" height="163" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621242091282" />
+    <state width="1316" height="163" key="GridCell.Tab.1.left" timestamp="1621242091281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621241644890" />
-    <state width="1316" height="163" key="GridCell.Tab.1.right" timestamp="1621241644891">
+    <state width="1316" height="163" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621242091281" />
+    <state width="1316" height="163" key="GridCell.Tab.1.right" timestamp="1621242091282">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="163" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621241644891" />
+    <state width="1316" height="163" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621242091282" />
     <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1620997032255">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -438,10 +434,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1621134831271" />
-    <state x="384" y="114" width="700" height="500" key="find.popup" timestamp="1621241481660">
+    <state x="384" y="114" width="700" height="500" key="find.popup" timestamp="1621242757284">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="384" y="114" width="700" height="500" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621241481660" />
+    <state x="384" y="114" width="700" height="500" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621242757284" />
     <state x="434" y="78" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621143317870">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
