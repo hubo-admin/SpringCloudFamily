@@ -63,6 +63,18 @@
             <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
 
+        <!--    Hystrix依赖，实现远程调用的弹性模式    -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+        <!--    拉取高版本的 Netflix Hystrix 库（ Camden.SR5 中默认的是1.5.6，这个版本有一些小问题）    -->
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-javanica</artifactId>
+            <version>1.5.9</version>
+        </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -91,7 +103,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>com.thoughtmechanix.licenses.LicenseServiceApplication</start-class>
         <docker.image.name>adminhubo/cloud-licensing-service</docker.image.name>
-        <docker.image.tag>chapter3</docker.image.tag>
+        <docker.image.tag>chapter4</docker.image.tag>
     </properties>
 
     <build>

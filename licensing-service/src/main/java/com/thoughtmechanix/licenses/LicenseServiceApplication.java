@@ -25,11 +25,13 @@ import org.springframework.web.client.RestTemplate;
  * @EnableDiscoveryClient 使用DiscoveryClient方式查找服务时使用
  * @EnableFeignClients 使用FeignClients方式查找服务时使用
  *      EnableDiscoveryClient 和 EnableFeignClients 还有后面的 @LoadBalanced 三种方式用一种即可
+ * @EnableCircuitBreaker 开启 Hystrix，如果不开启，Hystrix断路器不好处于活跃状态
  */
 @SpringBootApplication
 @EnableEurekaClient
 @RefreshScope
 @EnableFeignClients
+@EnableCircuitBreaker
 public class LicenseServiceApplication {
 
     /**
