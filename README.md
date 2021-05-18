@@ -188,3 +188,25 @@
   - v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}  
     获取证书信息及远程调用获取组织机构详细信息
     - clientType：feign,rest,discovery
+
+## For the branch of v4.0-spring-cloud-hystrix
+#### 新曾模块说明
+- 无新增模块
+
+#### 新增功能
+- 在两个微服务中增加熔断功能
+- 自定义熔断器线程管理策略，传递上下文
+
+测试端点：
+   >  /v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/
+   
+   > /v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/f3831f8c-c338-4ebe-a82a-e2fc1d1ff78a
+
+#### 注意事项
+- 测试熔断功能时：有1/3的概率出发熔断
+- 测试自定义线程管理策略时  
+  需要在请求头中添加请求头：tmx-correlation-id，然后在日志中可以看到这个头信息的传递
+  > 这里的上下问传递是在同一个服务中主线程和熔断器线程组中的线程之间，
+  > 该传递过程不会跨服务，licensing-service远程调用organization-service时，
+  > organization-service 日志输出 null。跨服务的传递上下问需要借助网关
+                         
