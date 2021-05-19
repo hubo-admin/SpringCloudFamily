@@ -1,5 +1,6 @@
 package com.thoughtmechanix.licenses;
 
+import com.thoughtmechanix.licenses.utils.UserContextInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -8,7 +9,11 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @Program: simple-service
@@ -43,7 +48,19 @@ public class LicenseServiceApplication {
     @LoadBalanced
     @Bean
     public RestTemplate getRestTemplate(){
-        return new RestTemplate();
+        RestTemplate template = new RestTemplate();
+        //获取现有的请求拦截器
+        List<ClientHttpRequestInterceptor> interceptors =
+                template.getInterceptors();
+        //添加自定义拦截器 UserContextInterceptor
+        if (interceptors == null){
+            template.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
+        } else {
+            interceptors.add(new UserContextInterceptor());
+            template.setInterceptors(interceptors);
+        }
+
+        return template;
     }
 
     public static void main(String[] args) {

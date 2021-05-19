@@ -25,31 +25,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/hystrix/DelegatingUserContextCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/hystrix/ThreadLocalAwareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/hystrix/ThreadLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContextInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/hystrix/DelegatingUserContextCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/hystrix/ThreadLocalAwareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/hystrix/ThreadLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/utils/UserContextInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/ZuulServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/FilterUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/ResponseFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/SpecialRoutesFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/TrackingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/model/AbTestingRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/utils/UserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/utils/UserContextFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/utils/UserContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/utils/UserContextInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/resources/config/specialroutesservice/specialroutesservice.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/controllers/LicenseServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/services/LicenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContextInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContextInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/OrganizationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/OrganizationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="v3.0-spring-cloud-eureka" />
+        <entry key="$PROJECT_DIR$" value="v4.0-spring-cloud-hystrix" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +103,7 @@
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -111,14 +111,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\zuulsvr\src\main\java\com\thoughtmechanix\zuulsvr" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\zuulsvr\src\main\resources" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\zuulsvr\src\main" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\java\com\thoughtmechanix\organization" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\java\com\thoughtmechanix\licenses\hystrix" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\java\com\thoughtmechanix\licenses" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\docker" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\docker" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrganizationApplication">
+  <component name="RunManager" selected="Spring Boot.LicenseServiceApplication">
     <configuration name="ConfigServerApplicationByGit" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="configuration-service-git" />
       <extension name="coverage">
@@ -185,13 +185,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZuulServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="zuulsvr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtmechanix.zuulsvr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.zuulsvr.ZuulServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.LicenseServiceApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.ZuulServerApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplicationByGit" />
-        <item itemvalue="Spring Boot.LicenseServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +228,8 @@
       <workItem from="1621214533493" duration="482000" />
       <workItem from="1621216214645" duration="16758000" />
       <workItem from="1621298955032" duration="19184000" />
-      <workItem from="1621336714918" duration="1162000" />
+      <workItem from="1621336714918" duration="15551000" />
+      <workItem from="1621386010715" duration="6345000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -378,7 +392,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621261488062</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="增加断路器功能：断路器模式、后备模式、舱壁模式，以及舱壁模式下线程上下文的传递（自定义并发策略）">
+      <created>1621338215785</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1621338215785</updated>
+    </task>
+    <task id="LOCAL-00025" summary="增加断路器功能：断路器模式、后备模式、舱壁模式，以及舱壁模式下线程上下文的传递（自定义并发策略）">
+      <created>1621339070302</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621339070302</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update 增加hystrix相关功能说明">
+      <created>1621344841279</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1621344841279</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +452,9 @@
     <MESSAGE value="fix 启动类错误修正" />
     <MESSAGE value="docker容器执行脚本接容器构建脚本修改  通过" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="增加断路器功能：断路器模式、后备模式、舱壁模式，以及舱壁模式下线程上下文的传递（自定义并发策略）" />
+    <MESSAGE value="update 增加hystrix相关功能说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 增加hystrix相关功能说明" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="231" key="#Notifications" timestamp="1621250596758">
@@ -452,38 +489,54 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="218" key="GridCell.Tab.0.bottom" timestamp="1621330201711">
+    <state width="1316" height="281" key="GridCell.Tab.0.bottom" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621330201711" />
-    <state width="1316" height="218" key="GridCell.Tab.0.center" timestamp="1621330201711">
+    <state width="1316" height="281" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.0.center" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621330201711" />
-    <state width="1316" height="218" key="GridCell.Tab.0.left" timestamp="1621330201711">
+    <state width="1316" height="281" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.0.left" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621330201711" />
-    <state width="1316" height="218" key="GridCell.Tab.0.right" timestamp="1621330201711">
+    <state width="1316" height="281" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.0.right" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621330201711" />
-    <state width="1316" height="218" key="GridCell.Tab.1.bottom" timestamp="1621330201712">
+    <state width="1316" height="281" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.1.bottom" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621330201712" />
-    <state width="1316" height="218" key="GridCell.Tab.1.center" timestamp="1621330201711">
+    <state width="1316" height="281" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.1.center" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621330201711" />
-    <state width="1316" height="218" key="GridCell.Tab.1.left" timestamp="1621330201711">
+    <state width="1316" height="281" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.1.left" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621330201711" />
-    <state width="1316" height="218" key="GridCell.Tab.1.right" timestamp="1621330201712">
+    <state width="1316" height="281" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.1.right" timestamp="1621392269843">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="218" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621330201712" />
+    <state width="1316" height="281" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.2.bottom" timestamp="1621392269843">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="281" key="GridCell.Tab.2.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.2.center" timestamp="1621392269843">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="281" key="GridCell.Tab.2.center/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.2.left" timestamp="1621392269843">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="281" key="GridCell.Tab.2.left/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
+    <state width="1316" height="281" key="GridCell.Tab.2.right" timestamp="1621392269843">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1316" height="281" key="GridCell.Tab.2.right/0.0.1360.728@0.0.1360.728" timestamp="1621392269843" />
     <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1621305070281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -504,10 +557,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621261588148">
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621344887713">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621261588148" />
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621344887713" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -516,22 +569,26 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="92" y="92" width="1176" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1621134831271" />
-    <state x="541" y="141" width="700" height="500" key="find.popup" timestamp="1621327425741">
+    <state x="541" y="141" width="700" height="500" key="find.popup" timestamp="1621387763215">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="541" y="141" width="700" height="500" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621327425741" />
+    <state x="541" y="141" width="700" height="500" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621387763215" />
     <state x="434" y="78" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621143317870">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="434" y="78" key="git4idea.branch.GitSmartOperationDialog/0.0.1360.728@0.0.1360.728" timestamp="1621143317870" />
-    <state x="16" y="42" key="new project wizard" timestamp="1621232779267">
+    <state x="16" y="42" key="new project wizard" timestamp="1621341008093">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="16" y="42" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1621232779267" />
+    <state x="16" y="42" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1621341008093" />
     <state x="336" y="162" key="run.anything.popup" timestamp="1621327321535">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1621327321535" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621390251575">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1621390251575" />
     <state x="485" y="270" key="svn.upgradeDialog" timestamp="1621303591483">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -540,5 +597,37 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="433" y="237" key="svn4idea.checkout.options/0.0.1360.728@0.0.1360.728" timestamp="1621303589518" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/ZuulServerApplication.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/SpecialRoutesFilter.java</url>
+          <line>232</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/utils/UserContextInterceptor.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/ResponseFilter.java</url>
+          <line>26</line>
+          <option name="temporary" value="true" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

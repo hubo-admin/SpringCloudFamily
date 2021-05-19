@@ -1,0 +1,14 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: zuulservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      # enabled: true  默认配置服务是localhost:8888,
+      # 这里 confsvr 做了主机IP映射，
+      # 映射到了通过配置服务的docker镜像启动的配置服务容器
+      uri: http://confsvr:8888

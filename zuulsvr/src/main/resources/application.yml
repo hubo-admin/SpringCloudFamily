@@ -1,0 +1,29 @@
+#Setting logging levels
+logging:
+    level:
+      com.netflix: WARN
+      org.springframework.web: WARN
+      com.thoughtmechanix: DEBUG
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://eurekasvr:8761/eureka/
+
+##所有的zuul配置都放到配置中心管理，可以利用zuul暴露的POST端点/refresh刷新如有配置
+#zuul:
+#  prefix:  /api # 路由前缀
+#  ignored-services: 'organizationservice' # 忽略某个Eureka服务中的服务
+#  routes:
+#    organizationservice: /organization/** # 手动配置路由，organizationservice为eureka服务中的服务id
+#    licensestatic: # 手动配置静态路由，不从eureka获取
+#      path: /licensestatic/**
+#      url: http://licenseservice-static:8081
+##zuul超时配置，可以看出 zuul继承了中有hystrix和ribbon
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+#hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
+#licensingservice.ribbon.ReadTimeout: 2
