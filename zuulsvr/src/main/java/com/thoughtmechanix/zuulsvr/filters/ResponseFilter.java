@@ -29,7 +29,7 @@ public class ResponseFilter extends ZuulFilter{
                 FilterUtils.CORRELATION_ID,
                 filterUtils.getCorrelationId());
 
-        logger.debug("Completing outgoing request for {}.", ctx.getRequest().getRequestURI());
+        logger.debug("Completing outgoing request for {}.", ctx.getRequest().getRequestURL() + ctx.getRequest().getRequestURI());
 
         return null;
     }

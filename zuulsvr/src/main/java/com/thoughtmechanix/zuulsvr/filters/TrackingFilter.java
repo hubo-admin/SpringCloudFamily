@@ -32,7 +32,7 @@ public class TrackingFilter extends ZuulFilter{
 
         RequestContext ctx = RequestContext.getCurrentContext();
         //日志输出访问来源地址
-        logger.debug("Processing incoming request for {}.",  ctx.getRequest().getRequestURI());
+        logger.debug("Processing incoming request for {}.",  ctx.getRequest().getRequestURL() + ctx.getRequest().getRequestURI());
         return null;
     }
     @Override
