@@ -6,7 +6,9 @@
     <file url="file://$PROJECT_DIR$/eurekasvr/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/licensing-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/organization-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orgservice-new/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/simpleservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/specialroutes-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuulsvr/src/main/java" charset="UTF-8" />
