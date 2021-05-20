@@ -24,51 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="修该getOrganization方法，使返回结果与新服务有所区别">
-      <change afterPath="$PROJECT_DIR$/orgservice-new/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/OrganizationNewApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/controllers/OrganizationServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/hystrix/DelegatingUserContextCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/hystrix/ThreadLocalAwareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/hystrix/ThreadLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/model/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/repository/OrganizationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/java/com/thoughtmechanix/organization/utils/UserContextInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orgservice-new/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/SpecialRoutesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/controllers/SpecialRoutesServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/exception/NoRouteFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/hystrix/DelegatingUserContextCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/hystrix/ThreadLocalAwareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/hystrix/ThreadLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/model/AbTestingRoute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/repository/AbTestingRouteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/services/AbTestingRouteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/java/com/thoughtmechanix/specialroutes/utils/UserContextInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/specialroutes-service/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter5-zuul.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/ResponseFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/ResponseFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/SpecialRoutesFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/SpecialRoutesFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/TrackingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/TrackingFilter.java" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +80,7 @@
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/common" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -130,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\zuulsvr\src\main\java\com\thoughtmechanix\zuulsvr\filters" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\orgservice-new\src\main\java\com\thoughtmechanix\organization" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\resources\config\orgservice-new" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\specialroutes-service\src\main" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\orgservice-new\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
@@ -277,7 +235,7 @@
       <workItem from="1621431186032" duration="13140000" />
       <workItem from="1621470670445" duration="4921000" />
       <workItem from="1621476155674" duration="17092000" />
-      <workItem from="1621509749499" duration="299000" />
+      <workItem from="1621509749499" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -489,7 +447,42 @@
       <option name="project" value="LOCAL" />
       <updated>1621510055937</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="新版的组织机构服务，用来测试zuul的路由过滤器">
+      <created>1621510159780</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1621510159780</updated>
+    </task>
+    <task id="LOCAL-00032" summary="特殊路由查询服务">
+      <created>1621510218777</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1621510218777</updated>
+    </task>
+    <task id="LOCAL-00033" summary="过滤器怎加日志打印信息">
+      <created>1621510309401</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1621510309401</updated>
+    </task>
+    <task id="LOCAL-00034" summary="修改路由过滤器，怎加注释，修复bug">
+      <created>1621510370258</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1621510370258</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update">
+      <created>1621510390667</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1621510390667</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,14 +520,18 @@
     <MESSAGE value="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式" />
     <MESSAGE value="fix 启动类错误修正" />
     <MESSAGE value="docker容器执行脚本接容器构建脚本修改  通过" />
-    <MESSAGE value="update" />
     <MESSAGE value="增加断路器功能：断路器模式、后备模式、舱壁模式，以及舱壁模式下线程上下文的传递（自定义并发策略）" />
     <MESSAGE value="update 增加hystrix相关功能说明" />
     <MESSAGE value="zuul:路由功能，前置过滤器和后置过滤器，请求拦截以在服务之间传递关联ID" />
     <MESSAGE value="zuul:路由过滤器" />
     <MESSAGE value="添加配置文件" />
     <MESSAGE value="修该getOrganization方法，使返回结果与新服务有所区别" />
-    <option name="LAST_COMMIT_MESSAGE" value="修该getOrganization方法，使返回结果与新服务有所区别" />
+    <MESSAGE value="新版的组织机构服务，用来测试zuul的路由过滤器" />
+    <MESSAGE value="特殊路由查询服务" />
+    <MESSAGE value="过滤器怎加日志打印信息" />
+    <MESSAGE value="修改路由过滤器，怎加注释，修复bug" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="231" key="#Notifications" timestamp="1621250596758">
