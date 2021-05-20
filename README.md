@@ -209,4 +209,21 @@
   > 这里的上下问传递是在同一个服务中主线程和熔断器线程组中的线程之间，
   > 该传递过程不会跨服务，licensing-service远程调用organization-service时，
   > organization-service 日志输出 null。跨服务的传递上下问需要借助网关
-                         
+ 
+ ## For the branch of v5.0-spring-cloud-zuul
+#### 新曾模块说明
+ - specialroutes-service  
+   特殊路由管理服务，可以通过服务ID查询可替代的新服务
+ - orgservice-new  
+   新版的组织机构服务
+ - zuulsvr  
+   网关服务，实现路由功能，链路跟踪（关联ID传递向下游服务传递），路由过滤器（pre，post，route）实例
+ 
+ #### 特殊说明
+在Zuul服务做路由转发过滤时，我按照书中的凡是没有实现。  
+> 遇到的问题：路由转发后从新服务获取到响应，但是后续又路由到了老版服务获取了旧数据。
+
+> 解决：修改自定义的路由过滤器，利用Zuul提共的RibbonRoutingFilter通过ribbon和服务ID向新服务转发请求，
+> 我在这里想的方式是，在RibbonRoutingFilter之前加一个路由过滤器，在准发前修改服务id，将指向老服务的id换成新的。
+
+注:书中的方案时没有问题的，因为在官网也有类似的例子，但是我一直没有调通，主要原因还是对Zuul的了解不深入，做完这个学习项目之后再专门看一下Zuul。
