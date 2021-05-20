@@ -31,9 +31,9 @@ import org.springframework.web.client.RestTemplate;
 
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ import java.util.Random;
 @Component
 public class SpecialRoutesFilter extends ZuulFilter {
     private static final int FILTER_ORDER =  1;
-    private static final boolean SHOULD_FILTER =false;
+    private static final boolean SHOULD_FILTER =true;
 
     @Autowired
     FilterUtils filterUtils;
@@ -74,35 +74,12 @@ public class SpecialRoutesFilter extends ZuulFilter {
      */
     private ProxyRequestHelper helper = new ProxyRequestHelper();
 
+
     /**
-     * 查看路由记录是否存在
-     * @param serviceName
+     * 获取请求方式
+     * @param request
      * @return
      */
-    private AbTestingRoute getAbRoutingInfo(String serviceName){
-        ResponseEntity<AbTestingRoute> restExchange = null;
-        try {
-            restExchange = restTemplate.exchange(
-                             "http://specialroutesservice/v1/route/abtesting/{serviceName}",
-                             HttpMethod.GET,
-                             null, AbTestingRoute.class, serviceName);
-        } catch(HttpClientErrorException ex){
-            if (ex.getStatusCode()== HttpStatus.NOT_FOUND){
-                return null;
-            }
-            throw ex;
-        }
-        return restExchange.getBody();
-    }
-
-    private String buildRouteString(String oldEndpoint, String newEndpoint, String serviceName){
-        int index = oldEndpoint.indexOf(serviceName);
-
-        String strippedRoute = oldEndpoint.substring(index + serviceName.length());
-        System.out.println("Target route: " + String.format("%s/%s", newEndpoint, strippedRoute));
-        return String.format("%s/%s", newEndpoint, strippedRoute);
-    }
-
     private String getVerb(HttpServletRequest request) {
         String sMethod = request.getMethod();
         return sMethod.toUpperCase();
@@ -123,12 +100,6 @@ public class SpecialRoutesFilter extends ZuulFilter {
         }
         return list.toArray(new BasicHeader[0]);
     }
-
-    private HttpResponse forwardRequest(HttpClient httpclient, HttpHost httpHost,
-                                        HttpRequest httpRequest) throws IOException {
-        return httpclient.execute(httpHost, httpRequest);
-    }
-
 
     private MultiValueMap<String, String> revertHeaders(Header[] headers) {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
@@ -159,6 +130,124 @@ public class SpecialRoutesFilter extends ZuulFilter {
                 revertHeaders(response.getAllHeaders()));
     }
 
+    /**
+     * 特殊路由过滤器开始
+     * @return
+     */
+    @Override
+    public Object run() {
+        RequestContext ctx = RequestContext.getCurrentContext();
+
+        //从 special routes service 服务根据服务名查询特殊路由信息
+        AbTestingRoute abTestRoute = getAbRoutingInfo( filterUtils.getServiceId() );
+
+        //如果存在可用的特殊路由选项
+        if (abTestRoute!=null && useSpecialRoute(abTestRoute)) {
+            ctx.set("serviceId","orgservice-new");
+
+            //构建路由地址
+            String route = buildRouteString(
+                    ctx.getRequest().getRequestURI(),
+                    abTestRoute.getEndpoint(),
+                    ctx.get("serviceId").toString());
+            //转发到特定路由
+            forwardToSpecialRoute(route);
+        }
+
+        return null;
+    }
+
+    /**
+     * 根据服务名称从 special routes service 获取路由信息
+     * @param serviceName
+     * @return
+     */
+    private AbTestingRoute getAbRoutingInfo(String serviceName){
+        ResponseEntity<AbTestingRoute> restExchange = null;
+        try {
+            restExchange = restTemplate.exchange(
+                    "http://specialroutesservice/v1/route/abtesting/{serviceName}",
+                    HttpMethod.GET,
+                    null, AbTestingRoute.class, serviceName);
+        } catch(HttpClientErrorException ex){
+            if (ex.getStatusCode()== HttpStatus.NOT_FOUND){
+                return null;
+            }
+            throw ex;
+        }
+        return restExchange.getBody();
+    }
+
+    /**
+     * 构建路由
+     * @param oldEndpoint 原路由端点
+     * @param newEndpoint 新路由端点，从 special routes service 服务获取
+     * @param serviceName 请求服务名称
+     * @return
+     */
+    private String buildRouteString(String oldEndpoint, String newEndpoint, String serviceName){
+        int index = oldEndpoint.indexOf(serviceName);
+
+        //获取请求后缀，即接口地址
+        String strippedRoute = oldEndpoint.substring(index + serviceName.length());
+        System.out.println("Target route: " + String.format("%s/%s", newEndpoint, strippedRoute));
+        return String.format("%s/%s", newEndpoint, strippedRoute);
+    }
+
+    /**
+     * 路由转发
+     * @param route
+     */
+    private void forwardToSpecialRoute(String route) {
+        RequestContext context = RequestContext.getCurrentContext();
+        HttpServletRequest request = context.getRequest();
+
+        MultiValueMap<String, String> headers = this.helper
+                .buildZuulRequestHeaders(request);
+        MultiValueMap<String, String> params = this.helper
+                .buildZuulRequestQueryParams(request);
+        String verb = getVerb(request);
+        InputStream requestEntity = getRequestBody(request);
+        if (request.getContentLength() < 0) {
+            context.setChunkedRequestBody();
+        }
+
+        this.helper.addIgnoredHeaders();
+        CloseableHttpClient httpClient = null;
+        HttpResponse response = null;
+
+        try {
+            /**
+             * 创建一个 httpClient 向指定服务转发请求，
+             * 并获取返回结果 response，然后把结果存到当前响应中，最终响应到客户端
+             */
+            httpClient  = HttpClients.createDefault();
+            response = forward(httpClient, verb, route, request, headers,
+                    params, requestEntity);
+            setResponse(response);
+        } catch (Exception ex ) {
+            ex.printStackTrace();
+
+        }
+        finally{
+            try {
+                httpClient.close();
+            } catch(IOException ex){}
+        }
+    }
+
+    /**
+     * 转发逻辑
+     * @param httpclient http请求客户端
+     * @param verb 请求方式
+     * @param uri 请求地址
+     * @param request
+     * @param headers 请求头
+     * @param params 请求参数
+     * @param requestEntity
+     * @return
+     * @throws Exception
+     */
     private HttpResponse forward(HttpClient httpclient, String verb, String uri,
                                  HttpServletRequest request, MultiValueMap<String, String> headers,
                                  MultiValueMap<String, String> params, InputStream requestEntity)
@@ -204,17 +293,33 @@ public class SpecialRoutesFilter extends ZuulFilter {
     }
 
     /**
-     * 决定是否替代服务路由
+     * 执行请求转发 返回响应数据 HttpResponse
+     * @param httpclient
+     * @param httpHost
+     * @param httpRequest
+     * @return
+     * @throws IOException
+     */
+    private HttpResponse forwardRequest(HttpClient httpclient, HttpHost httpHost,
+                                        HttpRequest httpRequest) throws IOException {
+        HttpResponse response = httpclient.execute(httpHost, httpRequest);
+        return response;
+    }
+
+    /**
+     * 决定是否替代原服务路由
+     *     1.活跃状态 active： Y 允许，N 不允许
+     *     2.只有 1/10 的流量会通过新路由
      * @param testRoute
      * @return
      */
     public boolean useSpecialRoute(AbTestingRoute testRoute){
         Random random = new Random();
-
+        //‘N’标识不开启特殊路由，‘Y’表示开启
         if (testRoute.getActive().equals("N")){
             return false;
         }
-
+        //如果开启aptest特殊路由，则有 1/10 的概率将请求转发到特殊路由
         int value = random.nextInt((10 - 1) + 1) + 1;
 
         if (testRoute.getWeight()<value){
@@ -222,65 +327,5 @@ public class SpecialRoutesFilter extends ZuulFilter {
         }
 
         return false;
-    }
-
-    /**
-     * 特殊路由开始
-     * @return
-     */
-    @Override
-    public Object run() {
-        RequestContext ctx = RequestContext.getCurrentContext();
-
-        AbTestingRoute abTestRoute = getAbRoutingInfo( filterUtils.getServiceId() );
-
-        if (abTestRoute!=null && useSpecialRoute(abTestRoute)) {
-            String route = buildRouteString(ctx.getRequest().getRequestURI(),
-                    abTestRoute.getEndpoint(),
-                    ctx.get("serviceId").toString());
-            forwardToSpecialRoute(route);
-        }
-
-        return null;
-    }
-
-    /**
-     * 路由转发
-     * @param route
-     */
-    private void forwardToSpecialRoute(String route) {
-        RequestContext context = RequestContext.getCurrentContext();
-        HttpServletRequest request = context.getRequest();
-
-        MultiValueMap<String, String> headers = this.helper
-                .buildZuulRequestHeaders(request);
-        MultiValueMap<String, String> params = this.helper
-                .buildZuulRequestQueryParams(request);
-        String verb = getVerb(request);
-        InputStream requestEntity = getRequestBody(request);
-        if (request.getContentLength() < 0) {
-            context.setChunkedRequestBody();
-        }
-
-        this.helper.addIgnoredHeaders();
-        CloseableHttpClient httpClient = null;
-        HttpResponse response = null;
-
-        try {
-            httpClient  = HttpClients.createDefault();
-            response = forward(httpClient, verb, route, request, headers,
-                    params, requestEntity);
-            setResponse(response);
-        }
-        catch (Exception ex ) {
-            ex.printStackTrace();
-
-        }
-        finally{
-            try {
-                httpClient.close();
-            }
-            catch(IOException ex){}
-        }
     }
 }
