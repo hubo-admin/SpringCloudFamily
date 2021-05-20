@@ -1,0 +1,11 @@
+server:
+  port: 8910
+spring:
+  application:
+    name: specialroutesservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://confsvr:8888
