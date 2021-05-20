@@ -26,7 +26,9 @@ public class OrganizationServiceController {
      */
     @RequestMapping(value="/{organizationId}",method = RequestMethod.GET)
     public Organization getOrganization( @PathVariable("organizationId") String organizationId) {
-        return orgService.getOrg(organizationId);
+        Organization org = orgService.getOrg(organizationId);
+        org.setContactName("OLD::" + org.getContactName());
+        return org;
     }
 
     /**
