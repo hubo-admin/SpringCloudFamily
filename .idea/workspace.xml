@@ -25,7 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration-service-localfile/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service-localfile/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/common/docker-compose-chapter5-zuul.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter5-zuul.yml" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,7 @@
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/configuration-service-localfile/src/main/docker" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -87,11 +89,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\zuulsvr\src\main\java\com\thoughtmechanix\zuulsvr\filters" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\orgservice-new\src\main\java\com\thoughtmechanix\organization" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\resources\config\orgservice-new" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\specialroutes-service\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
@@ -234,7 +236,8 @@
       <workItem from="1621431186032" duration="13140000" />
       <workItem from="1621470670445" duration="4921000" />
       <workItem from="1621476155674" duration="17092000" />
-      <workItem from="1621509749499" duration="2105000" />
+      <workItem from="1621509749499" duration="2645000" />
+      <workItem from="1621512652246" duration="4093000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -488,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621510958182</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update">
+      <created>1621512335036</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1621512335036</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,10 +642,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="320" y="73" key="NewModule_or_Project.wizard/0.0.1360.728@0.0.1360.728" timestamp="1621305070281" />
-    <state x="366" y="69" key="RollbackChangesDialog" timestamp="1621490702634">
+    <state x="366" y="69" key="RollbackChangesDialog" timestamp="1621514046412">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="366" y="69" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621490702634" />
+    <state x="366" y="69" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621514046412" />
     <state x="183" y="10" key="SettingsEditor" timestamp="1621474244713">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -648,10 +658,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621511102744">
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2" timestamp="1621512337525">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621511102744" />
+    <state x="272" y="99" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621512337525" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -668,10 +678,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="227" y="102" width="905" height="523" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1360.728@0.0.1360.728" timestamp="1621498450616" />
-    <state x="351" y="160" width="700" height="500" key="find.popup" timestamp="1621510941843">
+    <state x="351" y="160" width="700" height="558" key="find.popup" timestamp="1621514009225">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="351" y="160" width="700" height="500" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621510941843" />
+    <state x="351" y="160" width="700" height="558" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621514009225" />
     <state x="434" y="78" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621143317870">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -684,10 +694,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1621511654647" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621501278463">
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621511920173">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1621501278463" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1621511920173" />
     <state x="485" y="270" key="svn.upgradeDialog" timestamp="1621303591483">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
