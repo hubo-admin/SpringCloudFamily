@@ -13,4 +13,5 @@ spring:
               ,classpath:config/organizationservice
                ,classpath:config/zuulservice
                 ,classpath:config/specialroutesservice
-                 ,authenticationservice
+                 ,classpath:config/authenticationservice
+                  ,classpath:config/orgservice-new
