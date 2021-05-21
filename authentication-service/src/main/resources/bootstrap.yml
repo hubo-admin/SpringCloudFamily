@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: authenticationservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://confsvr:8888
+server:
+  port: 8901
