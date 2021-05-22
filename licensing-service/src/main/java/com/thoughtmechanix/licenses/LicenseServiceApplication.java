@@ -10,7 +10,11 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.security.oauth2.client.OAuth2ClientContext;
+import org.springframework.security.oauth2.client.OAuth2RestTemplate;
+import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+//import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
 import java.util.List;
@@ -37,7 +41,35 @@ import java.util.List;
 @RefreshScope
 @EnableFeignClients
 @EnableCircuitBreaker
+@EnableResourceServer
 public class LicenseServiceApplication {
+
+    /**
+     * 支持OAuth2调用的REST模板类实例
+     *      在需要远程调用其他受保护的服务时使用，它会自动将头部Authorization信息向下传递
+     * @param oAuth2ClientContext
+     * @param protectedResourceDetails
+     * @return
+     */
+    @LoadBalanced
+    @Bean
+    public OAuth2RestTemplate oAuth2RestTemplate(OAuth2ClientContext oAuth2ClientContext,
+            OAuth2ProtectedResourceDetails protectedResourceDetails){
+        OAuth2RestTemplate restTemplate = new OAuth2RestTemplate(protectedResourceDetails, oAuth2ClientContext);
+
+        //获取现有的请求拦截器
+        List<ClientHttpRequestInterceptor> interceptors =
+                restTemplate.getInterceptors();
+        //添加自定义拦截器 UserContextInterceptor
+        if (interceptors == null){
+            restTemplate.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
+        } else {
+            interceptors.add(new UserContextInterceptor());
+            restTemplate.setInterceptors(interceptors);
+        }
+
+        return restTemplate;
+    }
 
     /**
      * 使用带有Ribbon功能的SpringRestTemplate调用服务
@@ -45,23 +77,23 @@ public class LicenseServiceApplication {
      * 通过 @Bean注解 将这个RestTemplate实例交给容器管理,其他需要使用的地方直接注入即可
      * @return
      */
-    @LoadBalanced
-    @Bean
-    public RestTemplate getRestTemplate(){
-        RestTemplate template = new RestTemplate();
-        //获取现有的请求拦截器
-        List<ClientHttpRequestInterceptor> interceptors =
-                template.getInterceptors();
-        //添加自定义拦截器 UserContextInterceptor
-        if (interceptors == null){
-            template.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
-        } else {
-            interceptors.add(new UserContextInterceptor());
-            template.setInterceptors(interceptors);
-        }
-
-        return template;
-    }
+//    @LoadBalanced
+//    @Bean
+//    public RestTemplate getRestTemplate(){
+//        RestTemplate template = new RestTemplate();
+//        //获取现有的请求拦截器
+//        List<ClientHttpRequestInterceptor> interceptors =
+//                template.getInterceptors();
+//        //添加自定义拦截器 UserContextInterceptor
+//        if (interceptors == null){
+//            template.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
+//        } else {
+//            interceptors.add(new UserContextInterceptor());
+//            template.setInterceptors(interceptors);
+//        }
+//
+//        return template;
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(LicenseServiceApplication.class, args);
