@@ -63,19 +63,19 @@ services:
         AUTHSERVER_URI:   "http://authenticationservice:8901/auth/user"
         ENCRYPT_KEY:       "IMSYMMENTRIC"
   orgservice-new:
-    image: adminhubo/cloud-orgservice-new:chapter6
-    ports:
-      - "8087:8087"
-    environment:
-      PROFILE: "default"
-      SERVER_PORT: "8087"
-      CONFIGSERVER_URI: "http://configserver:8888"
-      EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
-      EUREKASERVER_PORT:        "8761"
-      DATABASESERVER_PORT:      "5432"
-      CONFIGSERVER_PORT:        "8888"
-      ENCRYPT_KEY:       "IMSYMMENTRIC"
-    specialroutes-service:
+      image: adminhubo/cloud-orgservice-new:chapter6
+      ports:
+        - "8087:8087"
+      environment:
+        PROFILE: "default"
+        SERVER_PORT: "8087"
+        CONFIGSERVER_URI: "http://configserver:8888"
+        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        EUREKASERVER_PORT:        "8761"
+        DATABASESERVER_PORT:      "5432"
+        CONFIGSERVER_PORT:        "8888"
+        ENCRYPT_KEY:       "IMSYMMENTRIC"
+  specialroutes-service:
       image: adminhubo/cloud-specialroutes-service:chapter6
       ports:
         - "8910:8910"
