@@ -26,16 +26,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="认证服务使用为jwt添加增强器,添加自定义信息">
-      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/config/ServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/TrackingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/filters/TrackingFilter.java" afterDir="false" />
-    </list>
-    <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter6-oauth.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +83,7 @@
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/authentication" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/common" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -100,11 +95,11 @@
       <recent name="com.thoughtmechanix.organization.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\java\com\thoughtmechanix\authentication" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\resources" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\configuration-service-localfile\src\main\docker" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
@@ -258,7 +253,7 @@
       <workItem from="1621509749499" duration="2645000" />
       <workItem from="1621512652246" duration="4093000" />
       <workItem from="1621523794710" duration="21346000" />
-      <workItem from="1621597483014" duration="41159000" />
+      <workItem from="1621597483014" duration="41952000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config By git">
       <created>1621138240134</created>
@@ -589,7 +584,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621752907723</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="网关使jjwt解析令牌">
+      <created>1621755345021</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1621755345021</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update">
+      <created>1621755362745</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1621755362745</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +637,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Spring Cloud Config Client Project Initial Demo --- licensing-service" />
     <MESSAGE value="docker-compose .xml file for chapter2" />
     <MESSAGE value="initial eurekasvr model" />
     <MESSAGE value="修改配置服务中组织服务相关的配置文件，把数据库连接地址改为远端数据库docker容器服务的地址" />
@@ -647,13 +655,14 @@
     <MESSAGE value="过滤器怎加日志打印信息" />
     <MESSAGE value="修改路由过滤器，怎加注释，修复bug" />
     <MESSAGE value="初始化认证服务---简单测试认证功能" />
-    <MESSAGE value="update" />
     <MESSAGE value="fix :参数名写错" />
     <MESSAGE value="organization service 通过认证服务保护资源" />
     <MESSAGE value="licensing-service通过认证服务保护，远程调用改用OAuth2RestTemplate" />
     <MESSAGE value="认证服务使用jwt" />
     <MESSAGE value="认证服务使用为jwt添加增强器,添加自定义信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="认证服务使用为jwt添加增强器,添加自定义信息" />
+    <MESSAGE value="网关使jjwt解析令牌" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="231" key="#Notifications" timestamp="1621250596758">
@@ -700,54 +709,54 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="250" key="GridCell.Tab.0.bottom" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.0.bottom" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.0.center" timestamp="1621754170840">
+    <state width="1316" height="250" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.0.center" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621754170840" />
-    <state width="1316" height="250" key="GridCell.Tab.0.left" timestamp="1621754170840">
+    <state width="1316" height="250" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.0.left" timestamp="1621755755282">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621754170840" />
-    <state width="1316" height="250" key="GridCell.Tab.0.right" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621755755282" />
+    <state width="1316" height="250" key="GridCell.Tab.0.right" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.1.bottom" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.1.bottom" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.1.center" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.1.center" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.1.left" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.1.left" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.1.right" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.1.right" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.2.bottom" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.2.bottom" timestamp="1621755755284">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.2.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.2.center" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.2.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621755755284" />
+    <state width="1316" height="250" key="GridCell.Tab.2.center" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.2.center/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.2.left" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.2.center/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.2.left" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.2.left/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
-    <state width="1316" height="250" key="GridCell.Tab.2.right" timestamp="1621754170841">
+    <state width="1316" height="250" key="GridCell.Tab.2.left/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
+    <state width="1316" height="250" key="GridCell.Tab.2.right" timestamp="1621755755283">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="250" key="GridCell.Tab.2.right/0.0.1360.728@0.0.1360.728" timestamp="1621754170841" />
+    <state width="1316" height="250" key="GridCell.Tab.2.right/0.0.1360.728@0.0.1360.728" timestamp="1621755755283" />
     <state x="320" y="73" key="NewModule_or_Project.wizard" timestamp="1621305070281">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -768,10 +777,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1621751024682">
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1621755511928">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621751024682" />
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621755511928" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -792,10 +801,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="227" y="102" width="905" height="523" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1360.728@0.0.1360.728" timestamp="1621498450616" />
-    <state x="509" y="170" width="700" height="558" key="find.popup" timestamp="1621751271073">
+    <state x="509" y="170" width="700" height="558" key="find.popup" timestamp="1621755755000">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="509" y="170" width="700" height="558" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621751271073" />
+    <state x="509" y="170" width="700" height="558" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621755755000" />
     <state x="350" y="67" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621741062196">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
