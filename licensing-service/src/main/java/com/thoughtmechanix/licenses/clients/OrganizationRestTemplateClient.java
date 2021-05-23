@@ -7,23 +7,26 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.oauth2.client.OAuth2RestTemplate;
+//import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.stereotype.Component;
-//import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestTemplate;
 
 @Component
 public class OrganizationRestTemplateClient {
 
     private static final Logger logger = LoggerFactory.getLogger(OrganizationRestTemplateClient.class);
 
-//    @Autowired
-//    RestTemplate restTemplate;
+    /**
+     * 使用原始的RestTemplate
+     */
+    @Autowired
+    RestTemplate restTemplate;
 
     /**
      * 注入支持OAuth2的REST
      */
-    @Autowired
-    OAuth2RestTemplate restTemplate;
+//    @Autowired
+//    OAuth2RestTemplate restTemplate;
 
     public Organization getOrganization(String organizationId){
 //        ResponseEntity<Organization> restExchange =

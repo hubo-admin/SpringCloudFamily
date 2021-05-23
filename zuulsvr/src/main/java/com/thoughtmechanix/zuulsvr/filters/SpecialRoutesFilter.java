@@ -143,15 +143,17 @@ public class SpecialRoutesFilter extends ZuulFilter {
 
         //如果存在可用的特殊路由选项
         if (abTestRoute!=null && useSpecialRoute(abTestRoute)) {
+            //用自带的ribbon路由过滤器去转发
             ctx.set("serviceId","orgservice-new");
 
+            //(这个方法不起作用,依然会走后面的请求)
             //构建路由地址
-            String route = buildRouteString(
-                    ctx.getRequest().getRequestURI(),
-                    abTestRoute.getEndpoint(),
-                    ctx.get("serviceId").toString());
+//            String route = buildRouteString(
+//                    ctx.getRequest().getRequestURI(),
+//                    abTestRoute.getEndpoint(),
+//                    ctx.get("serviceId").toString());
             //转发到特定路由
-            forwardToSpecialRoute(route);
+//            forwardToSpecialRoute(route);
         }
 
         return null;

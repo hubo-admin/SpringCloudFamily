@@ -31,6 +31,8 @@ public class UserContextFilter implements Filter {
 
         ////打印请求的关联id
         logger.debug("UserContextFilter Correlation id: {}", UserContextHolder.getContext().getCorrelationId());
+        ////打印 JWT
+        logger.debug("UserContextFilter AUTH TOKEN: {}", UserContextHolder.getContext().getAuthToken());
 
         filterChain.doFilter(httpServletRequest, servletResponse);
     }

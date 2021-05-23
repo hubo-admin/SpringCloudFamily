@@ -16,7 +16,8 @@ public class UserContextInterceptor implements ClientHttpRequestInterceptor {
     public ClientHttpResponse intercept(
             HttpRequest request, byte[] body, ClientHttpRequestExecution execution)
             throws IOException {
-        logger.debug("UserContextInterceptor: {}. Thread Id: {}.", UserContextHolder.getContext().getCorrelationId(), Thread.currentThread().getId());
+        logger.debug("UserContextInterceptor: CorrelationId  {}. Thread Id: {}.", UserContextHolder.getContext().getCorrelationId(), Thread.currentThread().getId());
+        logger.debug("UserContextInterceptor: AuthToken JWT  {}. Thread Id: {}.", UserContextHolder.getContext().getAuthToken(), Thread.currentThread().getId());
         HttpHeaders headers = request.getHeaders();
         headers.add(UserContext.CORRELATION_ID, UserContextHolder.getContext().getCorrelationId());
         headers.add(UserContext.AUTH_TOKEN, UserContextHolder.getContext().getAuthToken());
