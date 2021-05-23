@@ -13,6 +13,7 @@
         <module name="licensing-service" />
         <module name="configuration-service-git" />
         <module name="orgservice-new" />
+        <module name="authentication-service" />
         <module name="zuulsvr" />
         <module name="specialroutes-service" />
       </profile>
