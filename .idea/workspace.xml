@@ -28,9 +28,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/common/docker-compose-chapter6-oauth.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter6-oauth.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +83,7 @@
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/organization-service/src/main/docker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/authentication-service/src/main/docker" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -97,11 +95,11 @@
       <recent name="com.thoughtmechanix.organization.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\java\com\thoughtmechanix\authentication" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
@@ -255,14 +253,7 @@
       <workItem from="1621509749499" duration="2645000" />
       <workItem from="1621512652246" duration="4093000" />
       <workItem from="1621523794710" duration="21346000" />
-      <workItem from="1621597483014" duration="44873000" />
-    </task>
-    <task id="LOCAL-00002" summary="Spring Cloud Config By localfile">
-      <created>1621138277679</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1621138277679</updated>
+      <workItem from="1621597483014" duration="47643000" />
     </task>
     <task id="LOCAL-00003" summary="Spring Cloud Config Client Project Initial Demo --- licensing-service">
       <created>1621138382320</created>
@@ -600,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621756246136</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update">
+      <created>1621760526660</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1621760526672</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

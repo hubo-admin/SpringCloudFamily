@@ -211,7 +211,7 @@
   > organization-service 日志输出 null。跨服务的传递上下问需要借助网关
  
  ## For the branch of v5.0-spring-cloud-zuul
-#### 新曾模块说明
+#### 新增模块说明
  - specialroutes-service  
    特殊路由管理服务，可以通过服务ID查询可替代的新服务
  - orgservice-new  
@@ -227,3 +227,44 @@
 > 我在这里想的方式是，在RibbonRoutingFilter之前加一个路由过滤器，在准发前修改服务id，将指向老服务的id换成新的。
 
 注:书中的方案时没有问题的，因为在官网也有类似的例子，但是我一直没有调通，主要原因还是对Zuul的了解不深入，做完这个学习项目之后再专门看一下Zuul。
+
+## For the branch of v6.0-spring-cloud-oauth2
+#### 新增模块说明
+- authentication-service  
+  OAuth2认证服务
+
+#### 测试端点
+- /auth/oauth/token    
+  获取令牌端点:
+  - 参数:    
+    在postman中Body中填写一下参数
+    - grant_type  
+      认证类型,选择password
+    - scope  
+      令牌作用域:webclient,mobileclient
+    - username 和 password
+      william.woodward 的密码 password2   
+      john.carnell 的密码是 password1
+  - 认证应用:
+    - 应用名:eagleeye ,密码:thisissecret  
+        在postman中测试接口时在Authoritarian中选择Basic Auth,填写这两个信息.
+  
+- /auth/user  
+  通过令牌到认证服务验证并获取用户信息
+  - 添加请求头
+    ```text
+    Authorization = Bearer {令牌access_token}
+    ```  
+    
+## For the branch of v6.1-spring-cloud-oauth2-jwt
+#### 新增模块说明
+- 使用JWT令牌
+
+#### 测试端点
+```shell script
+# 添加请求头
+Authorization = Bearer {令牌access_token}
+# 请求端点
+127.0.0.1:5555/api/licensing/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/f3831f8c-c338-4ebe-a82a-e2fc1d1ff78a
+```  
+
