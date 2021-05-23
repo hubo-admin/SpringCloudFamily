@@ -12,7 +12,7 @@ zuul.routes.licensestatic.url:  http://licenseservice-static:8081
 #设置敏感头部信息，被列出的头不会像下游服务传递，默认组织三个：Cookie,Set-Cookie和Authorization
 zuul.sensitiveHeaders: Cookie,Set-Cookie
 zuul.debug.request: true
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 6000
 #hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
 #licensingservice.ribbon.ReadTimeout: 2
-#signing.key: "345345fsdfsf5345"
+signing.key: "345345fsdfsf5345"
