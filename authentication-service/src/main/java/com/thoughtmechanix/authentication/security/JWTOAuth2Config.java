@@ -36,19 +36,33 @@ public class JWTOAuth2Config extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private JwtAccessTokenConverter jwtAccessTokenConverter;
 
+    @Autowired
+    private TokenEnhancer jwtTokenEnhancer;
+
 
     /**
      * 配置用于服务的验证管理器，并增加了JWT相关组件
      */
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+        /**
+         * TokenEnhancerChain令牌增强链
+         *      可以挂钩多个令牌增强器
+         */
         TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
         tokenEnhancerChain.setTokenEnhancers(
-                Arrays.asList(jwtAccessTokenConverter));
+                Arrays.asList(jwtTokenEnhancer,jwtAccessTokenConverter));
 
-        endpoints.tokenStore(tokenStore)
+        endpoints
+                //(JWT)
+                .tokenStore(tokenStore)
+                //(JWT)
                 .accessTokenConverter(jwtAccessTokenConverter)
+                //(JWT)将令牌增强器挂钩到configure()方法的endpoints参数
+                .tokenEnhancer(tokenEnhancerChain)
+                //添加验证管理器
                 .authenticationManager(authenticationManager)
+                //添加详细信息服务实例
                 .userDetailsService(userDetailsService);
     }
 
