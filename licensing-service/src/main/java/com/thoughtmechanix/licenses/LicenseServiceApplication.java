@@ -142,11 +142,11 @@ public class LicenseServiceApplication {
      * 这种写法官方不建议了
      * @param orgChange
      */
-    @StreamListener(Sink.INPUT)
-    public void loggerSink(OrganizationChangeModel orgChange) {
-        logger.debug("Received an event for organization id {}", orgChange.getOrganizationId());
-        System.out.println(orgChange.toString());
-    }
+//    @StreamListener(Sink.INPUT)
+//    public void loggerSink(OrganizationChangeModel orgChange) {
+//        logger.debug("Received an event for organization id {}", orgChange.getOrganizationId());
+//        System.out.println(orgChange.toString());
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(LicenseServiceApplication.class, args);

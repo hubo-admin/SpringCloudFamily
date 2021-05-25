@@ -2,10 +2,14 @@ spring:
   cloud:
     stream:
       bindings:
-        input:
+        inboundOrgChanges:
           destination: orgChangeTopic
           content-type: application/json
           group: licensingGroup
+#        input:
+#          destination: orgChangeTopic
+#          content-type: application/json
+#          group: licensingGroup
         binder:
           zkNodes: localhost
           brokers: localhost
