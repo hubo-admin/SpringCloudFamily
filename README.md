@@ -277,3 +277,9 @@ Authorization = Bearer {令牌access_token}
 
 #### 内容描述
 > 简单的使用 Spring Stream 实现服务之间消息的传递功能。
+
+## For the branch of v7.1-spring-cloud-stream-kafka-redis
+#### 新增功能点
+- redis服务环境（项目启动依赖）
+- 分布式缓存组织数据的简单缓存和获取
+- 通过消息操作分布式缓存
