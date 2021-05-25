@@ -18,6 +18,8 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 //import org.springframework.security.oauth2.client.OAuth2ClientContext;
 //import org.springframework.security.oauth2.client.OAuth2RestTemplate;
@@ -107,6 +109,33 @@ public class LicenseServiceApplication {
         }
 
         return template;
+    }
+
+    /**
+     * 构造一个 JedisConnectionFactory 的 Bean 实例
+     *      设置连接Redis服务器的信息（IP 端口）
+     * @return
+     */
+    @Bean
+    public JedisConnectionFactory jedisConnectionFactory(){
+        JedisConnectionFactory jedisConnectionFactory =
+                new JedisConnectionFactory();
+        jedisConnectionFactory.setHostName(serviceConfig.getRedisServer());
+        jedisConnectionFactory.setPort(serviceConfig.getRedisPort());
+        return jedisConnectionFactory;
+    }
+
+    /**
+     * 利用 JedisConnectionFactory 创建的连接创建一个 RedisTemplate 实例
+     *      可以用RedisTemplate的实例来完成对Redis的操作
+     * @return
+     */
+    @Bean
+    public RedisTemplate<String,Object> redisTemplate(){
+        RedisTemplate<String,Object> template =
+                new RedisTemplate<String,Object>();
+        template.setConnectionFactory(jedisConnectionFactory());
+        return  template;
     }
 
     /**
