@@ -268,3 +268,12 @@ Authorization = Bearer {令牌access_token}
 127.0.0.1:5555/api/licensing/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/f3831f8c-c338-4ebe-a82a-e2fc1d1ff78a
 ```  
 
+## For the branch of v7.0-spring-cloud-stream-kafka
+#### 新增
+- 组织服务增加发送消息功能（消息生产者）
+- 证书服务增加接收消息功能（消息订阅者）
+- 本地测试需要按照kafka（消息管理）
+- 使用kafka需要zookeeper环境
+
+#### 内容描述
+> 简单的使用 Spring Stream 实现服务之间消息的传递功能。
