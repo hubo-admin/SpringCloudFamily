@@ -284,3 +284,11 @@ Authorization = Bearer {令牌access_token}
 - 分布式缓存组织数据的简单缓存和获取
 - 自定义消息通道
 - 通过消息操作分布式缓存
+
+## For the branch of v8.0-spring-cloud-sleuth-logspout-papertrail
+#### 内容描述
+> 利用 sleuth 事项分布式事务跟踪管理，logspout 将sleuth形式的日志发送到papertrail日志统一管理平台，完成分布式日志的聚合。
+
+#### 添加内容
+- 在组织服务、证书服务、认证服务和网关服务中引入sleuth依赖
+- 修改网关服务后置过滤器，使用sleuth的跟踪id作为关联id传递
