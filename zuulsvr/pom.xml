@@ -60,6 +60,12 @@
             <artifactId>jjwt</artifactId>
             <version>0.7.0</version>
         </dependency>
+        <!--  Spring Cloud Sleuth 链路跟踪相关依赖 start  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+        <!--  Spring Cloud Sleuth 链路跟踪相关依赖 end  -->
     </dependencies>
 
     <!--Docker build Config-->

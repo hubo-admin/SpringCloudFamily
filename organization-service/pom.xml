@@ -94,6 +94,13 @@
             <artifactId>spring-cloud-starter-stream-kafka</artifactId>
         </dependency>
 
+        <!--  Spring Cloud Sleuth 链路跟踪相关依赖 start  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+        <!--  Spring Cloud Sleuth 链路跟踪相关依赖 end  -->
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
