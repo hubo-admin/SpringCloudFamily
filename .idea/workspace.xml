@@ -27,17 +27,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="关闭zuul网关的路由过滤器，方便测试事件消息功能">
-      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter7-kafka-redis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter8-sleuth-logspout.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/docker/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration-service-git/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service-git/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration-service-localfile/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service-localfile/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eurekasvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekasvr/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orgservice-new/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orgservice-new/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specialroutes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/specialroutes-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuulsvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/pom.xml" afterDir="false" />
@@ -72,7 +69,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="v7.0-spring-cloud-stream-kafka" />
+        <entry key="$PROJECT_DIR$" value="v7.1-spring-cloud-stream-kafka-redis" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,6 +95,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -110,27 +108,28 @@
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/authentication-service/src/main/docker" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/common" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.thoughtmechanix.zuulsvr.filters" />
       <recent name="com.thoughtmechanix.licenses.events" />
       <recent name="com.thoughtmechanix.organization.config" />
       <recent name="com.thoughtmechanix.organization.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\docker" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\java\com\thoughtmechanix\licenses\repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.LicenseServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
     <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.authentication.AuthenticationApplication" />
@@ -246,11 +245,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.LicenseServiceApplication" />
         <item itemvalue="Spring Boot.ZuulServerApplication" />
+        <item itemvalue="Spring Boot.LicenseServiceApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
         <item itemvalue="Spring Boot.SpecialRoutesApplication" />
         <item itemvalue="Spring Boot.OrganizationNewApplication" />
-        <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
       </list>
     </recent_temporary>
   </component>
@@ -287,27 +286,13 @@
       <workItem from="1621912221175" duration="1020000" />
       <workItem from="1621933570722" duration="1572000" />
       <workItem from="1621942819028" duration="15588000" />
-    </task>
-    <task id="LOCAL-00018" summary="licensing-service服务添加访问端点：&#10;1.v1/tools/eureka/services：&#10;  利用DiscoveryClient客户端获取eureka服务端注册的所有应用&#10;&#10;2.v1/organizations/{organizationId}/licenses/{licenseId}/{clientType}&#10;  获取证书信息及机构详细信息：并为获取机构信息提供了三种远程调用方式">
-      <created>1621242446426</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1621242446426</updated>
-    </task>
-    <task id="LOCAL-00019" summary="fix 启动类错误修正">
-      <created>1621252937292</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1621252937292</updated>
-    </task>
-    <task id="LOCAL-00020" summary="docker容器执行脚本接容器构建脚本修改  通过">
-      <created>1621258750793</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1621258750793</updated>
+      <workItem from="1621961125100" duration="593000" />
+      <workItem from="1621989478626" duration="434000" />
+      <workItem from="1622012879054" duration="5486000" />
+      <workItem from="1622030036072" duration="6551000" />
+      <workItem from="1622076745600" duration="12481000" />
+      <workItem from="1622114601889" duration="5885000" />
+      <workItem from="1622123058300" duration="347000" />
     </task>
     <task id="LOCAL-00021" summary="update">
       <created>1621260254729</created>
@@ -631,7 +616,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621955096102</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="update">
+      <created>1621961306086</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1621961306088</updated>
+    </task>
+    <task id="LOCAL-00068" summary="修改zuul后置过滤器，使用跟踪作为管理id传递">
+      <created>1622118875528</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1622118875529</updated>
+    </task>
+    <task id="LOCAL-00069" summary="修改zuul后置过滤器，使用跟踪作为管理id传递">
+      <created>1622118891452</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1622118891452</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,8 +676,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="添加配置文件" />
-    <MESSAGE value="修该getOrganization方法，使返回结果与新服务有所区别" />
     <MESSAGE value="新版的组织机构服务，用来测试zuul的路由过滤器" />
     <MESSAGE value="特殊路由查询服务" />
     <MESSAGE value="过滤器怎加日志打印信息" />
@@ -695,21 +699,23 @@
     <MESSAGE value="远程调用组织服务时怎加缓存层" />
     <MESSAGE value="怎加自定义消息通道：接收到消息后对分布式缓存操作" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="添加 spring sleuth 事务跟踪依赖" />
+    <MESSAGE value="修改zuul后置过滤器，使用跟踪作为管理id传递" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改zuul后置过滤器，使用跟踪作为管理id传递" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="231" key="#Notifications" timestamp="1621768117974">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="565" y="231" key="#Notifications/0.0.1360.728@0.0.1360.728" timestamp="1621768117974" />
-    <state x="160" y="0" key="#Project_Structure" timestamp="1621560736889">
+    <state x="160" y="0" key="#Project_Structure" timestamp="1622078391040">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="160" y="0" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1621560736889" />
-    <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621860948315">
+    <state x="160" y="0" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1622078391040" />
+    <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622020864205">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1621860948315" />
+    <state x="134" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1622020864205" />
     <state x="485" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1621945722720">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -730,6 +736,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="113" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1621305046244" />
+    <state width="450" height="641" key="Git.Branch.Popup" timestamp="1622019935108">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="450" height="641" key="Git.Branch.Popup/0.0.1360.728@0.0.1360.728" timestamp="1622019935108" />
     <state x="495" y="285" key="Github.CreateGistDialog" timestamp="1621076631828">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -742,38 +752,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="234" key="GridCell.Tab.0.bottom" timestamp="1621960510576">
+    <state width="1316" height="151" key="GridCell.Tab.0.bottom" timestamp="1622120527239">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621960510576" />
-    <state width="1316" height="234" key="GridCell.Tab.0.center" timestamp="1621960510575">
+    <state width="1316" height="151" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
+    <state width="1316" height="151" key="GridCell.Tab.0.center" timestamp="1622120527238">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621960510575" />
-    <state width="1316" height="234" key="GridCell.Tab.0.left" timestamp="1621960510575">
+    <state width="1316" height="151" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1622120527238" />
+    <state width="1316" height="151" key="GridCell.Tab.0.left" timestamp="1622120527238">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621960510575" />
-    <state width="1316" height="234" key="GridCell.Tab.0.right" timestamp="1621960510575">
+    <state width="1316" height="151" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1622120527238" />
+    <state width="1316" height="151" key="GridCell.Tab.0.right" timestamp="1622120527239">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621960510575" />
-    <state width="1316" height="234" key="GridCell.Tab.1.bottom" timestamp="1621960510576">
+    <state width="1316" height="151" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
+    <state width="1316" height="151" key="GridCell.Tab.1.bottom" timestamp="1622120527239">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621960510576" />
-    <state width="1316" height="234" key="GridCell.Tab.1.center" timestamp="1621960510576">
+    <state width="1316" height="151" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
+    <state width="1316" height="151" key="GridCell.Tab.1.center" timestamp="1622120527239">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1621960510576" />
-    <state width="1316" height="234" key="GridCell.Tab.1.left" timestamp="1621960510576">
+    <state width="1316" height="151" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
+    <state width="1316" height="151" key="GridCell.Tab.1.left" timestamp="1622120527239">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1621960510576" />
-    <state width="1316" height="234" key="GridCell.Tab.1.right" timestamp="1621960510576">
+    <state width="1316" height="151" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
+    <state width="1316" height="151" key="GridCell.Tab.1.right" timestamp="1622120527239">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="234" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1621960510576" />
+    <state width="1316" height="151" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
     <state width="1316" height="234" key="GridCell.Tab.2.bottom" timestamp="1621960510577">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -794,10 +804,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="320" y="73" key="NewModule_or_Project.wizard/0.0.1360.728@0.0.1360.728" timestamp="1621305070281" />
-    <state x="366" y="69" key="RollbackChangesDialog" timestamp="1621854274045">
+    <state x="366" y="69" key="RollbackChangesDialog" timestamp="1622118700813">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="366" y="69" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621854274045" />
+    <state x="366" y="69" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1622118700813" />
     <state x="183" y="10" key="SettingsEditor" timestamp="1621474244713">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -810,10 +820,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1621955107703">
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1621961703869">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621955107703" />
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1621961703869" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -842,10 +852,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="227" y="102" width="905" height="523" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1360.728@0.0.1360.728" timestamp="1621863646821" />
-    <state x="509" y="170" width="700" height="558" key="find.popup" timestamp="1621955808605">
+    <state x="509" y="170" width="700" height="558" key="find.popup" timestamp="1622119924113">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="509" y="170" width="700" height="558" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621955808605" />
+    <state x="509" y="170" width="700" height="558" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1622119924113" />
     <state x="350" y="67" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621741062196">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -858,10 +868,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1621511654647" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621588294434">
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1622082434546">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1621588294434" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1622082434546" />
     <state x="485" y="270" key="svn.upgradeDialog" timestamp="1621303591483">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
