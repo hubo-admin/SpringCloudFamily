@@ -5,6 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.sleuth.Sampler;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.context.annotation.Bean;
@@ -35,6 +37,16 @@ public class OrganizationApplication {
     public Filter userContextFilter() {
         UserContextFilter userContextFilter = new UserContextFilter();
         return userContextFilter;
+    }
+
+    /**
+     * 配置将服务的所有跟踪日志发送到zipkin服务
+     *      spring.sleuth.sampler.percentage=1 来事项
+     * @return
+     */
+    @Bean
+    public Sampler defaultSampler() {
+        return new AlwaysSampler();
     }
 
     public static void main(String[] args) {
