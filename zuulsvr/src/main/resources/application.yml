@@ -1,3 +1,7 @@
+spring:
+  zipkin:
+    baseUrl: http://zipkin:9411
+
 #Setting logging levels
 logging:
     level:
