@@ -9,6 +9,7 @@
         <module name="simple-service" />
         <module name="configuration-service-localfile" />
         <module name="organization-service" />
+        <module name="zipkinsvr" />
         <module name="eurekasvr" />
         <module name="licensing-service" />
         <module name="configuration-service-git" />
