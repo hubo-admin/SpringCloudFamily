@@ -20,30 +20,20 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:v7.1-spring-cloud-stream-kafka-redis" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="关闭zuul网关的路由过滤器，方便测试事件消息功能">
-      <change afterPath="$PROJECT_DIR$/zipkinsvr/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkinsvr/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkinsvr/src/main/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkinsvr/src/main/java/com/thoughtmechanix/zipkinsvr/ZipkinServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkinsvr/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter8-sleuth-zipkin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/LicenseServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/OrganizationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/OrganizationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/ZuulServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuulsvr/ZuulServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,14 +118,14 @@
       <recent name="com.thoughtmechanix.organization.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\zipkinsvr\src\main" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\docker\common" />
-      <recent name="E:\Projects\MicroServices\SpringCloudFamily\authentication-service\src\main\docker" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\zuulsvr\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\organization-service\src\main\docker" />
       <recent name="E:\Projects\MicroServices\SpringCloudFamily\licensing-service\src\main\docker" />
+      <recent name="E:\Projects\MicroServices\SpringCloudFamily\zipkinsvr\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
+  <component name="RunManager" selected="Spring Boot.OrganizationApplication">
     <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.thoughtmechanix.authentication.AuthenticationApplication" />
@@ -250,20 +240,20 @@
       <item itemvalue="Spring Boot.ConfigServerApplicationByGit" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.AuthenticationApplication" />
+      <item itemvalue="Spring Boot.ZipkinServerApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
       <item itemvalue="Spring Boot.OrganizationNewApplication" />
       <item itemvalue="Spring Boot.LicenseServiceApplication" />
       <item itemvalue="Spring Boot.SpecialRoutesApplication" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
-      <item itemvalue="Spring Boot.ZipkinServerApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ZuulServerApplication" />
-        <item itemvalue="Spring Boot.SpecialRoutesApplication" />
         <item itemvalue="Spring Boot.LicenseServiceApplication" />
         <item itemvalue="Spring Boot.OrganizationNewApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplicationByLocalfile" />
+        <item itemvalue="Spring Boot.SpecialRoutesApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -306,49 +296,10 @@
       <workItem from="1622030036072" duration="6551000" />
       <workItem from="1622076745600" duration="12481000" />
       <workItem from="1622114601889" duration="5885000" />
-      <workItem from="1622123058300" duration="5160000" />
-    </task>
-    <task id="LOCAL-00025" summary="增加断路器功能：断路器模式、后备模式、舱壁模式，以及舱壁模式下线程上下文的传递（自定义并发策略）">
-      <created>1621339070302</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1621339070302</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update 增加hystrix相关功能说明">
-      <created>1621344841279</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1621344841279</updated>
-    </task>
-    <task id="LOCAL-00027" summary="zuul:路由功能，前置过滤器和后置过滤器，请求拦截以在服务之间传递关联ID">
-      <created>1621392738603</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1621392738603</updated>
-    </task>
-    <task id="LOCAL-00028" summary="zuul:路由过滤器">
-      <created>1621393001769</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1621393001769</updated>
-    </task>
-    <task id="LOCAL-00029" summary="添加配置文件">
-      <created>1621509901691</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1621509901691</updated>
-    </task>
-    <task id="LOCAL-00030" summary="修该getOrganization方法，使返回结果与新服务有所区别">
-      <created>1621510055937</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1621510055937</updated>
+      <workItem from="1622123058300" duration="5753000" />
+      <workItem from="1622201166226" duration="3510000" />
+      <workItem from="1622293586437" duration="4090000" />
+      <workItem from="1622302430827" duration="1023000" />
     </task>
     <task id="LOCAL-00031" summary="新版的组织机构服务，用来测试zuul的路由过滤器">
       <created>1621510159780</created>
@@ -651,7 +602,49 @@
       <option name="project" value="LOCAL" />
       <updated>1622124058177</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="新增zipkin服务">
+      <created>1622128343177</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128343178</updated>
+    </task>
+    <task id="LOCAL-00075" summary="添加zipkin相关依赖">
+      <created>1622128386611</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128386611</updated>
+    </task>
+    <task id="LOCAL-00076" summary="添加zipkin相关依赖">
+      <created>1622128399101</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128399101</updated>
+    </task>
+    <task id="LOCAL-00077" summary="增加配置，指向zipkin服务">
+      <created>1622128507792</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128507792</updated>
+    </task>
+    <task id="LOCAL-00078" summary="所有跟踪日志都发送到zipkin服务">
+      <created>1622128531832</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128531832</updated>
+    </task>
+    <task id="LOCAL-00079" summary="update">
+      <created>1622128549819</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128549819</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +661,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="v7.1-spring-cloud-stream-kafka-redis" />
                       </list>
                     </value>
                   </entry>
@@ -691,10 +684,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="过滤器怎加日志打印信息" />
-    <MESSAGE value="修改路由过滤器，怎加注释，修复bug" />
-    <MESSAGE value="初始化认证服务---简单测试认证功能" />
-    <MESSAGE value="fix :参数名写错" />
     <MESSAGE value="organization service 通过认证服务保护资源" />
     <MESSAGE value="licensing-service通过认证服务保护，远程调用改用OAuth2RestTemplate" />
     <MESSAGE value="认证服务使用jwt" />
@@ -715,14 +704,18 @@
     <MESSAGE value="修改zuul后置过滤器，使用跟踪作为管理id传递" />
     <MESSAGE value="添加logspout的docker服务，用来向papertrailapp日志平台传输日志" />
     <MESSAGE value="升级版本号" />
+    <MESSAGE value="新增zipkin服务" />
+    <MESSAGE value="添加zipkin相关依赖" />
+    <MESSAGE value="增加配置，指向zipkin服务" />
+    <MESSAGE value="所有跟踪日志都发送到zipkin服务" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="565" y="231" key="#Notifications" timestamp="1621768117974">
+    <state x="565" y="231" key="#Notifications" timestamp="1622301189824">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="565" y="231" key="#Notifications/0.0.1360.728@0.0.1360.728" timestamp="1621768117974" />
+    <state x="565" y="231" key="#Notifications/0.0.1360.728@0.0.1360.728" timestamp="1622301189824" />
     <state x="160" y="0" key="#Project_Structure" timestamp="1622126745460">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -743,18 +736,18 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="517" height="438" key="DebuggerActiveHint/0.0.1360.728@0.0.1360.728" timestamp="1621863034300" />
-    <state x="128" y="54" width="1175" height="565" key="DiffContextDialog" timestamp="1622126017178">
+    <state x="128" y="54" width="1175" height="565" key="DiffContextDialog" timestamp="1622303466016">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="128" y="54" width="1175" height="565" key="DiffContextDialog/0.0.1360.728@0.0.1360.728" timestamp="1622126017178" />
+    <state x="128" y="54" width="1175" height="565" key="DiffContextDialog/0.0.1360.728@0.0.1360.728" timestamp="1622303466016" />
     <state x="460" y="113" key="FileChooserDialogImpl" timestamp="1621305046244">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="113" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1621305046244" />
-    <state width="482" height="673" key="Git.Branch.Popup" timestamp="1622124337388">
+    <state width="496" height="687" key="Git.Branch.Popup" timestamp="1622128803740">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="482" height="673" key="Git.Branch.Popup/0.0.1360.728@0.0.1360.728" timestamp="1622124337388" />
+    <state width="496" height="687" key="Git.Branch.Popup/0.0.1360.728@0.0.1360.728" timestamp="1622128803740" />
     <state x="495" y="285" key="Github.CreateGistDialog" timestamp="1621076631828">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -767,38 +760,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="388" y="57" key="Github.UntrackedFilesDialog/0.0.1360.728@0.0.1360.728" timestamp="1621077854413" />
-    <state width="1316" height="151" key="GridCell.Tab.0.bottom" timestamp="1622120527239">
+    <state width="1316" height="332" key="GridCell.Tab.0.bottom" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
-    <state width="1316" height="151" key="GridCell.Tab.0.center" timestamp="1622120527238">
+    <state width="1316" height="332" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.0.center" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1622120527238" />
-    <state width="1316" height="151" key="GridCell.Tab.0.left" timestamp="1622120527238">
+    <state width="1316" height="332" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.0.left" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1622120527238" />
-    <state width="1316" height="151" key="GridCell.Tab.0.right" timestamp="1622120527239">
+    <state width="1316" height="332" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.0.right" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
-    <state width="1316" height="151" key="GridCell.Tab.1.bottom" timestamp="1622120527239">
+    <state width="1316" height="332" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.1.bottom" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
-    <state width="1316" height="151" key="GridCell.Tab.1.center" timestamp="1622120527239">
+    <state width="1316" height="332" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.1.center" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
-    <state width="1316" height="151" key="GridCell.Tab.1.left" timestamp="1622120527239">
+    <state width="1316" height="332" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.1.left" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
-    <state width="1316" height="151" key="GridCell.Tab.1.right" timestamp="1622120527239">
+    <state width="1316" height="332" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
+    <state width="1316" height="332" key="GridCell.Tab.1.right" timestamp="1622220842914">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1316" height="151" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1622120527239" />
+    <state width="1316" height="332" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1622220842914" />
     <state width="1316" height="234" key="GridCell.Tab.2.bottom" timestamp="1621960510577">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -819,10 +812,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="320" y="73" key="NewModule_or_Project.wizard/0.0.1360.728@0.0.1360.728" timestamp="1621305070281" />
-    <state x="366" y="69" key="RollbackChangesDialog" timestamp="1622118700813">
+    <state x="366" y="69" key="RollbackChangesDialog" timestamp="1622300501839">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="366" y="69" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1622118700813" />
+    <state x="366" y="69" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1622300501839" />
     <state x="183" y="10" key="SettingsEditor" timestamp="1621474244713">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -835,10 +828,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1622124290959">
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1622128805323">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1622124290959" />
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1622128805323" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

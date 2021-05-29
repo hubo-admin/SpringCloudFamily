@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="simple-service" />
         <module name="configuration-service-localfile" />
-        <module name="organization-service" />
+        <module name="orgservice-new" />
         <module name="zipkinsvr" />
         <module name="eurekasvr" />
         <module name="licensing-service" />
+        <module name="organization-service" />
+        <module name="simple-service" />
         <module name="configuration-service-git" />
-        <module name="orgservice-new" />
         <module name="authentication-service" />
         <module name="zuulsvr" />
         <module name="specialroutes-service" />
