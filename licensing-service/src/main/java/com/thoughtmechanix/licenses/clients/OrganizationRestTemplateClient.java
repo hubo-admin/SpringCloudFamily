@@ -6,6 +6,8 @@ import com.thoughtmechanix.licenses.utils.UserContextHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.sleuth.Span;
+import org.springframework.cloud.sleuth.Tracer;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 //import org.springframework.security.oauth2.client.OAuth2RestTemplate;
@@ -16,6 +18,12 @@ import org.springframework.web.client.RestTemplate;
 public class OrganizationRestTemplateClient {
 
     private static final Logger logger = LoggerFactory.getLogger(OrganizationRestTemplateClient.class);
+
+    /**
+     * 用来操作跟踪信息
+     */
+    @Autowired
+    Tracer tracer;
 
     /**
      * 使用原始的RestTemplate
@@ -33,12 +41,21 @@ public class OrganizationRestTemplateClient {
     OrganizationRedisRepository orgRedisRepo;
 
     private Organization checkRedisCache(String organizationId) {
+        //创建一个新的自定义跨度，传入参数是span的名称
+        Span newSpan = tracer.createSpan("readLicensingDataFromRedis");
         try {
             return orgRedisRepo.findOrganization(organizationId);
         }
         catch (Exception ex){
             logger.error("Error encountered while trying to retrieve organization {} check Redis Cache.  Exception {}", organizationId, ex);
             return null;
+        }finally {
+            //添加标签信息
+            newSpan.tag("peer.service","redis");
+            //记录一个事件，告诉sleuth捕获调用完成的时间
+            newSpan.logEvent(org.springframework.cloud.sleuth.Span.CLIENT_RECV);
+            //关闭新建的跨度
+            tracer.close(newSpan);
         }
     }
 
