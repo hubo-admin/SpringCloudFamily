@@ -26,14 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95df96a-3a75-457a-bd74-194b6d79e373" name="Default Changelist" comment="关闭zuul网关的路由过滤器，方便测试事件消息功能">
-      <change afterPath="$PROJECT_DIR$/docker/common/docker-compose-chapter8-sleuth-zipkin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/docker/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/thoughtmechanix/licenses/clients/OrganizationRestTemplateClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/docker/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/thoughtmechanix/organization/services/OrganizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/docker/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="915101f3-c3d3-4808-a491-94ea5d0ce4d5" name="idea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -300,34 +294,7 @@
       <workItem from="1622201166226" duration="3510000" />
       <workItem from="1622293586437" duration="4090000" />
       <workItem from="1622302430827" duration="1023000" />
-    </task>
-    <task id="LOCAL-00031" summary="新版的组织机构服务，用来测试zuul的路由过滤器">
-      <created>1621510159780</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1621510159780</updated>
-    </task>
-    <task id="LOCAL-00032" summary="特殊路由查询服务">
-      <created>1621510218777</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1621510218777</updated>
-    </task>
-    <task id="LOCAL-00033" summary="过滤器怎加日志打印信息">
-      <created>1621510309401</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1621510309401</updated>
-    </task>
-    <task id="LOCAL-00034" summary="修改路由过滤器，怎加注释，修复bug">
-      <created>1621510370258</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1621510370258</updated>
+      <workItem from="1622306079938" duration="420000" />
     </task>
     <task id="LOCAL-00035" summary="update">
       <created>1621510390667</created>
@@ -644,7 +611,35 @@
       <option name="project" value="LOCAL" />
       <updated>1622128549819</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="添加自定义跟踪事件跨度">
+      <created>1622306174664</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1622306174664</updated>
+    </task>
+    <task id="LOCAL-00081" summary="更新">
+      <created>1622306202383</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1622306202383</updated>
+    </task>
+    <task id="LOCAL-00082" summary="更新构建部署文件">
+      <created>1622306227258</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1622306227258</updated>
+    </task>
+    <task id="LOCAL-00083" summary="update">
+      <created>1622306245706</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1622306245706</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,9 +679,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="organization service 通过认证服务保护资源" />
-    <MESSAGE value="licensing-service通过认证服务保护，远程调用改用OAuth2RestTemplate" />
-    <MESSAGE value="认证服务使用jwt" />
     <MESSAGE value="认证服务使用为jwt添加增强器,添加自定义信息" />
     <MESSAGE value="网关使jjwt解析令牌" />
     <MESSAGE value="增加向消息队列发送消息功能" />
@@ -708,6 +700,9 @@
     <MESSAGE value="添加zipkin相关依赖" />
     <MESSAGE value="增加配置，指向zipkin服务" />
     <MESSAGE value="所有跟踪日志都发送到zipkin服务" />
+    <MESSAGE value="添加自定义跟踪事件跨度" />
+    <MESSAGE value="更新启动脚本" />
+    <MESSAGE value="更新构建部署文件" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
@@ -744,10 +739,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="113" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1621305046244" />
-    <state width="496" height="687" key="Git.Branch.Popup" timestamp="1622128803740">
+    <state width="498" height="689" key="Git.Branch.Popup" timestamp="1622306255661">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="496" height="687" key="Git.Branch.Popup/0.0.1360.728@0.0.1360.728" timestamp="1622128803740" />
+    <state width="498" height="689" key="Git.Branch.Popup/0.0.1360.728@0.0.1360.728" timestamp="1622306255661" />
     <state x="495" y="285" key="Github.CreateGistDialog" timestamp="1621076631828">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -828,10 +823,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="510" y="235" key="VCS.EditChangelistDialog/0.0.1360.728@0.0.1360.728" timestamp="1621222164651" />
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1622128805323">
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2" timestamp="1622306258316">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1622128805323" />
+    <state x="272" y="99" width="989" height="529" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1622306258316" />
     <state x="307" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1621253759799">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

@@ -292,3 +292,11 @@ Authorization = Bearer {令牌access_token}
 #### 添加内容
 - 在组织服务、证书服务、认证服务和网关服务中引入sleuth依赖
 - 修改网关服务后置过滤器，使用sleuth的跟踪id作为关联id传递
+
+## For the branch of v8.1-spring-cloud-sleuth-zipkin
+#### 内容描述
+> zipkin跟踪事件，监测分析性能
+
+#### 添加内容
+- zipkinsvr 事件跟踪服务
+- 自定义事件跨度
